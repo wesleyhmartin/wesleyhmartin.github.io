@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Voiceover Work | Wesley Martin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        .collapsible {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #4CAF50;
+        }
+
+        .content {
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 0 15px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Voiceover Work</h1>
+    </header>
+
+    <button class="collapsible">Audio Projects</button>
+    <div class="content">
+        <a href="/vo">I'm a Voiceover Artist!</a><br>
+        <a href="/audiobooks">I'm an Audiobook Narrator!</a><br>
+        <a href="/atw">Access Tech Weekly</a>
+    </div>
+
+    <button class="collapsible">About Me</button>
+    <div class="content">
+        <a href="/about">About</a><br>
+        <a href="/blog">Blog</a>
+    </div>
+
+    <button class="collapsible">Other Projects</button>
+    <div class="content">
+        <a href="/webhymns">WebHymns (A Work in Progress)</a><br>
+        <a href="/atw">Access Tech Weekly</a>
+    </div>
+
+    <img src="media/Wesley_Using_eReader.jpg" alt="Wesley Martin, a young man wearing a blue and black plaid shirt, sits at a table using a Zoomax NLS eReader. The table is covered with a light-colored patterned tablecloth. The background shows a dining area with a ceiling fan, a refrigerator, a door with a window, and a calendar on the wall.">
+
+    <div class="container">
+        <h1>My Voiceover Work</h1>
+        <p>Need an energetic phone greeting or a voiceover for your corporate PowerPoint? I've got you covered.</p>
+
+        <h2>Description</h2>
+        <p>High-Quality Voiceover That Brings Your Message to Life</p>
+        <p>Hi, I'm Wesley Martin, a 14-year-old professional voiceover artist dedicated to delivering top-notch audio that makes an impact. Whether it's IVR greetings, voicemail messages, commercials, or any small project, my goal is to provide you with a voiceover that stands out.</p>
+        <p>Every word is recorded with precision and every edit made with care, ensuring a seamless and engaging final product. I'm committed to not only meeting your expectations but exceeding them every time.</p>
+        <p>Plus, my quick turnaround means you'll have the perfect audio ready when you need it.</p>
+        <p>Give my services a try, and I'm confident you'll come back for more. Together, let's make your project shine!</p>
+
+        <h2>Samples</h2>
+
+        <h3>Podcast Intro</h3>
+        <audio controls>
+            <source src="/media/vo-samples/atw.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Phone Greeting</h3>
+        <audio controls>
+            <source src="/media/vo-samples/phonegreeting.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Learn More</h2>
+        <p>Learn more on <a href="https://www.fiverr.com/wesley_h_martin/voice-your-commercial-phone-greeting-podcast-intro-etc" target="_blank">Fiverr</a>. Don't hesitate to <a href="/about">reach out</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wesley Martin | Hosted on <a href="https://github.io" target="_blank">GitHub Pages</a></p>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
