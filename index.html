@@ -24,29 +24,22 @@
       background-color: #333;
       overflow: hidden;
     }
-    nav a {
-      float: left;
-      display: block;
+    nav button {
+      background-color: #333;
       color: white;
+      border: none;
       padding: 14px 16px;
-      text-align: center;
-      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
     }
-    nav a:hover {
+    nav button:hover {
       background-color: #ddd;
       color: black;
     }
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    .dropdown a {
-      font-size: 16px;
-      padding: 14px 16px;
-    }
     .dropdown-content {
       display: none;
-      position: absolute;
       background-color: #333;
       min-width: 160px;
       z-index: 1;
@@ -60,9 +53,6 @@
     .dropdown-content a:hover {
       background-color: #ddd;
       color: black;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
     }
     h2 {
       color: #4CAF50;
@@ -96,27 +86,24 @@
   
   <nav>
     <a href="https://wesleyhmartin.github.io">Home</a>
-    <div class="dropdown">
-      <a href="javascript:void(0)">Audio Projects</a>
-      <div class="dropdown-content">
-        <a href="https://wesleyhmartin.github.io/vo">I'm a Voiceover Artist!</a>
-        <a href="https://wesleyhmartin.github.io/audiobooks">I'm an Audiobook Narrator!</a>
-        <a href="https://wesleyhmartin.github.io/atw">Access Tech Weekly</a>
-      </div>
+
+    <button class="dropdown-btn">Audio Projects</button>
+    <div class="dropdown-content">
+      <a href="https://wesleyhmartin.github.io/vo">I'm a Voiceover Artist!</a>
+      <a href="https://wesleyhmartin.github.io/audiobooks">I'm an Audiobook Narrator!</a>
+      <a href="https://wesleyhmartin.github.io/atw">Access Tech Weekly</a>
     </div>
-    <div class="dropdown">
-      <a href="javascript:void(0)">About Me</a>
-      <div class="dropdown-content">
-        <a href="https://wesleyhmartin.github.io/about">About</a>
-        <a href="https://wesleyhmartin.github.io/blog">Blog</a>
-      </div>
+
+    <button class="dropdown-btn">About Me</button>
+    <div class="dropdown-content">
+      <a href="https://wesleyhmartin.github.io/about">About</a>
+      <a href="https://wesleyhmartin.github.io/blog">Blog</a>
     </div>
-    <div class="dropdown">
-      <a href="javascript:void(0)">Other Projects</a>
-      <div class="dropdown-content">
-        <a href="https://wesleyhmartin.github.io/webhymns">WebHymns (A Work in Progress)</a>
-        <a href="https://wesleyhmartin.github.io/atw">Access Tech Weekly</a>
-      </div>
+
+    <button class="dropdown-btn">Other Projects</button>
+    <div class="dropdown-content">
+      <a href="https://wesleyhmartin.github.io/webhymns">WebHymns (A Work in Progress)</a>
+      <a href="https://wesleyhmartin.github.io/atw">Access Tech Weekly</a>
     </div>
   </nav>
   
@@ -139,5 +126,19 @@
   <footer>
     <p>Thank you to <a href="https://github.io" target="_blank">GitHub Pages</a> for web hosting.</p>
   </footer>
+
+  <script>
+    // Get all dropdown buttons
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    // Loop through each button and add an event listener
+    dropdownBtns.forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle the display of the dropdown menu
+        const dropdownContent = button.nextElementSibling;
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
