@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project WebHymns | Wesley Martin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+-            padding: 20px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        #search {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #results {
+            list-style-type: none;
+            padding: 0;
+        }
+        #results li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index">Home</a><br>
+
+    <button class="collapsible">Audio Projects</button>
+    <div class="dropdown-content">
+      <a href="vo">I'm a Voiceover Artist!</a>
+      <a href="audiobooks">I'm an Audiobook Narrator!</a>
+      <a href="atw">Access Tech Weekly</a>
+    </div><br>
+
+    <button class="collapsible">About Me</button>
+    <div class="dropdown-content">
+      <a href="about">About</a>
+      <a href="blog">Blog</a>
+    </div><br>
+
+    <header>
+        <h1>WebHymns</h1>
+    </header>
+    <main>
+WebHymns is an online songbook listing the lyrics and other information for Christian songs. All necessary copyright permissions have been obtained. If you feel your copyright has been infringed upon, please <a href+"contact">contact me</a> ASAP.        <br>
+<input type="text" id="search" placeholder="Search...">
+
+ <ul id="results">
+<li><a href="song/a-beautiful-life">1. A Beautiful Life</a></li>
+<li><a href="song/daddy">2. Daddy, Will You be There for Me?</a></li>
+<li><a href="song/do-you-love-the-world">3. Do You Love the World</a></li>
+<li><a href="song/home-s">4. Home</a></li>
+<li><a href="song/mighty-powr-m">5. I Sing the Mighty Pow'r of God</a></li>
+<li><a href="song/lead-me-safely-on">6.Lead Me Safely On</a></li>
+<li><a href="song/railway">7. Life's Railway to Heaven</a></li>
+
+
+        </ul>
+    </main>
+    <footer>
+        &copy; 2024 Wesley Martin and Marcus Hurst. You can find copyright information for individual songs on their respective pages.
+    </footer>
+
+    <script>
+        document.getElementById('search').addEventListener('input', function () {
+            var query = this.value.toLowerCase();
+            var links = document.querySelectorAll('#results li');
+            links.forEach(function (link) {
+                var text = link.textContent.toLowerCase();
+                if (text.includes(query) || query === '') {
+                    link.style.display = '';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
