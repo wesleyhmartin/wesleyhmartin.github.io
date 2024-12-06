@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Tech Weekly | Wesley Martin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        .collapsible {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #4CAF50;
+        }
+
+        .content {
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 0 15px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="index">Home</a><br>
+    <button class="collapsible">Audio Projects</button>
+    <div class="content">
+<a href="vo.html">I'm a Voiceover Artist!</a>>
+        <a href="/audiobooks">I'm an Audiobook Narrator!</a><br>
+    </div><br>
+
+    <button class="collapsible">About Me</button>
+    <div class="content">
+        <a href="/about">About</a><br>
+        <a href="/blog">Blog</a>
+    </div><br>
+
+    <button class="collapsible">Other Projects</button>
+    <div class="content">
+        <a href="/webhymns">WebHymns (A Work in Progress)</a><br>
+    </div><br>
+</nav>
+    <div class="container">
+        <h1>Access Technology Weekly</h1>
+        <p>All the latest in access technology from a blindness perspective.</p>
+
+        <h2>Description</h2>
+        <p>Hi, I'm Wesley Martin, Access Tech Weekly's host. In this podcast we explore all the latest news in the technology space and talk about them.</p><p>Please <a href=\"mailto:accesstechweekly@yahoo.om">get in touch</a>!
+
+        <h2>Episodes</h2>
+<p>The audio files on this site are higher-quality than the ones in the RSS feed, due to host restrictions.
+        <h3>Promo</h3>
+<p>Hi. In this episode, I tell you about my upcoming podcast, Access Tech Weekly. <a href="mailto:accesstechweekly@yahoo.com">Please get in touch</a>! <small><small>Hosted on Acast. See acast.com/privacy for more information.</small></small>
+        <audio controls>
+            <source src="media/atw/000.mp3" type="audio/mpeg">
+Sorry, your browser seems not to support the audio player.
+        </audio>
+<a href="/media/atw/000.mp3" download>Download</a>
+    <footer>
+        <p>Hosted on <a href="https://github.io" target="_blank">GitHub Pages</a></p>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
