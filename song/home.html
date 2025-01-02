@@ -17,52 +17,49 @@
     </style>
 </head>
 <body>
-<nav>
-<a href="index">Home</a>
-    <br>Audio Projects
-        <a href="/audiobooks">I'm an Audiobook Narrator!</a><br>
-        <a href="/atw">Access Tech Weekly</a>
+<nav><a href="/webhymns">Go Back)</a><br></nav>    
+<header>
+    <h1>Home</h1>
+    <p>Author and Composer: The Eshes</p>
+    <p>Thank you to The Eshes for granting us permission to post this song on WebHymns.</p>
+</header>
 
-<br>About Me
-        <a href="/about">About</a><br>
-        <a href="/blog">Blog</a>
-<br>
-
-Other Projects
-        <a href="/webhymns">WebHymns (A Work in Progress)</a><br>
-<br></nav>
-    <header>
-        <h1>Home</h1>
-        <p>Author and Composer: The Eshes</p>
-<p>Thank you to The Eshes for granting us permission to post this song on WebHymns.</p>
-    </header>
-
-    <section>
+<section>
     <h2>Lyrics</h2>
     <button class="btn" onclick="loadLyrics('soprano')">Soprano</button>
     <button class="btn" onclick="loadLyrics('alto')">Alto</button>
     <button class="btn" onclick="loadLyrics('tenor')">Tenor</button>
     <button class="btn" onclick="loadLyrics('bass')">Bass</button>
 
-    </div>
+    <!-- Container for displaying lyrics -->
+    <div id="lyricsContainer"></div>
 
+    <h2>Audio</h2>
+    We were not able to secure an audio file due to copyright restrictions. If you want to hear the song, <a href="https://open.spotify.com/track/74wOPBAQ5yzkwFHrxDJ5bl">you may listen to it on Spotify</a>
+    
+    <h2>You can Find this Song In</h2>
+    <p>Harmonies of the Heart #126<br>Heartland Hymns #531<br>O Praise the Lord #101<br>Praise and Honor His Majesty #39</p>
+    <p>Copyright 2010 by The Eshes. Used with permission.<br>57 Cross Lanes Rd<br>Westmoreland TN 37186<br>Cell Ph. 615-670-3179<br>Wife's Cell Ph. 615-670-3415</p>
+</section>
 
-<h2>Audio</h2>
-We were not able to secure an audio file due to copyright restrictions. If you want to hear the song, <a href="https://open.spotify.com/track/74wOPBAQ5yzkwFHrxDJ5bl">you may listen to it on Spotify</a>
-        <h2>You can Find this Song In</h2>
-<p>Harmonies of the Heart #126<br>Heartland Hymns #531<br>O Praise the Lord #101<br>Praise and Honor His Majesty #39</p>
-<p>Copyright 2010 by The Eshes. Used with permission.<br>57 Cross Lanes Rd<br>Westmoreland TN 37186<br>Cell Ph. 615-670-3179<br>Wife's Cell Ph. 615-670-3415</p>
-    </section>
-
-    <script>
-        function loadLyrics(part) {
-            fetch(`/home-${part}`)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('lyricsContainer').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading lyrics:', error));
-        }
-    </script>
+<script>
+    function loadLyrics(part) {
+        // Simulating fetching lyrics from a local JSON file using fetch (this will only work on a server)
+        fetch('lyrics-home.json')
+            .then(response => response.json())
+            .then(data => {
+                const lyrics = data[part];
+                if (lyrics) {
+                    document.getElementById('lyricsContainer').innerHTML = lyrics;
+                } else {
+                    document.getElementById('lyricsContainer').innerHTML = "Lyrics not found.";
+                }
+            })
+            .catch(error => {
+                console.error('Error loading lyrics:', error);
+                document.getElementById('lyricsContainer').innerHTML = "Error loading lyrics.";
+            });
+    }
+</script>
 </body>
 </html>
