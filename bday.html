@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script>
+        // Change 'correctPassword' to your desired password
+        const correctPassword = "happybirthdayMZH";
+
+        function checkPassword() {
+            var password = prompt("Enter the password to claim your gift card:");
+
+            // Check if the entered password matches
+            if (password === correctPassword) {
+                window.location.href = "https://www.amazon.com/gp/r.html?C=32CVHSUH1WNEZ&M=urn:rtn:msg:2025022021510458597429d6ca4f2285b6383178b0p0na&R=2SQ7CNGITJK83&T=C&U=https%3A%2F%2Fwww.amazon.com%2Fg%2FU3Y89W7GNG949L%3Fref_%3Dpe_120899690_1025545470_TC0301BT&H=XJJXAOQJFVRVCAZNBJCONA0XXIAA&ref_=pe_120899690_1025545470_TC0301BT"; // Redirect to gift card page
+            } else {
+                document.getElementById("message").style.display = "block"; // Show error message
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Gift Card Access</h2>
+    <button onclick="checkPassword()">Click to Redeem Gift Card</button>
+    <p id="message" style="color: red; display: none;">Woops, this gift card isn't for you because you entered the wrong password.</p>
+</body>
+</html>
