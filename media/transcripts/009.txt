@@ -1,0 +1,323 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Wesley: In this episode of Access Tech Weekly, I talk to Venkatesh Chari of Orbit Research about the Orbit Player and other Orbit products. And if you didn't get what I did at the beginning, I layered the sound of an Orbit display refreshing over the beat of the music. 
+
+Hi, I'm Wesley, welcome to Access Tech Weekly. This is episode 9. And a special welcome to new listeners, because I think there will be a few. But without further ado... Joining me now is Venkatesh Chari from Orbit Research. Hi, Venkatesh.
+
+Venkatesh:
+Hi, Wesley.
+
+Wesley:
+How are you?
+
+Venkatesh:
+I'm good, thank you. It's great to be here. Thanks for having me.
+
+Wesley:
+Sure. I'd like to talk about your new product, the Orbit Player. You had launched it in India, hadn't you?
+
+Venkatesh:
+That is correct. So we launched it first in India, and we announced at CSUN last week about the global launch, which is going to start shipping in July.
+
+Wesley:
+So this is a pocket-sized media player. You can play all your files, I assume. A question that many people will wonder about is, what text-to-speech engine are you using?
+
+Venkatesh:
+Right. So we have a choice of text-to-speech engines. We have Vocalizer as the default in certain geographies, and also Google voices, and we're going to offer other choices as well over time.
+
+Wesley:
+That's awesome. Those voices are much higher quality than, I'll just say, some of your competitors.
+
+Venkatesh:
+That's right, that's right.
+
+Wesley:
+Yeah. Could you give an idea of what the size is?
+
+Venkatesh:
+Sure. So it's about 4.8, so almost 5 inches by about 2.25 inches in width, and about 0.5 inches in thickness. So it fits pretty comfortably in one's hand, and it can also fit very easily in a pocket or a purse, and it weighs about 130 grams.
+
+Wesley:
+Okay. Another question many Americans will be asking is, does this support BARD?
+
+Venkatesh:
+Yes, yes, of course. So BARD support is something we are working on, and the plan is that if not at launch time, it'll be available shortly thereafter.
+
+Wesley:
+Okay.
+
+Venkatesh:
+It's on our development roadmap. When we start, we will have Bookshare, NFB Newsline, and Project Gutenberg available, and then BARD soon thereafter.
+
+Wesley:
+Okay. What about libraries in other countries? I assume you have some other...
+
+Venkatesh:
+Yes, indeed. So internally, the product uses the EasyReader from Dolphin. So that comes with support for nearly 50 libraries from around the world, and we'll be able to provide access to all of those.
+
+Wesley:
+Right. Okay. It also can play DAISY, EPUB, DOcX, and it can even play Braille files. So it produces those in text-to-speech?
+
+Venkatesh:
+That is correct. Yeah. I believe it's one of the few devices, if not the only device, that can actually read Braille.
+
+Wesley:
+A lot of devices used to, but they don't anymore.
+
+Venkatesh:
+That's right.
+
+Wesley:
+You can also...
+
+Venkatesh:
+Braille is very important to us. It's a central part of our product offering, and we want to make sure that we support it in all forms and across all of our products.
+
+Wesley:
+And you can also play audio files, like MP3, WAV. You can also stream radio and podcasts. What directory are you using for that?
+
+Venkatesh:
+Right. So we use the Radio Browser database, and that's a very popular and very large database. It's sort of an open database in the sense that people can contribute to it, and it's relatively well-maintained.
+
+And you can also add your own URLs for a radio station, so you're not necessarily restricted to that particular database.
+
+Wesley:
+Okay. What about podcasts?
+
+Venkatesh:
+For podcasts, we use the iTunes database.
+
+Wesley:
+Okay.
+
+Venkatesh:
+That's a pretty well-recognized one.
+
+Wesley:
+So it has a full-sized SD card slot, not a micro. Is there a size limit on that?
+
+Venkatesh:
+Right. So talking about the full-size aspect, that was something that was very important to us. And so on all of our products, we have full-sized SD card slots, and we recognize the importance of being able to handle those a lot more conveniently than the Micro SD variety. As far as capacity goes, we are able to support up to 2 TB of storage in a single card. And then, of course, you can swap out cards to get essentially unlimited storage.
+
+Wesley:
+Two TB is enough for 99% of people.
+
+Venkatesh:
+And we do have internal storage as well.
+
+Wesley:
+Right. 16 gigabytes.
+
+Venkatesh:
+That's right.
+
+Wesley:
+I can attest to the clumsiness of Micro SD cards because I've lost mine more than one time. So it runs Android, right?
+
+Venkatesh:
+Correct. So it runs Android internally, but we don't really expose Android to the user. So, you know, the users don't have to worry about having to learn how to use Android or learning how to use TalkBack.
+
+So on top of Android, we have developed our own custom software and apps like, you know, the internet radio and the podcast and the reader, etc. So all of those have user interfaces that have been developed from the ground up to be a non-visual interface. And they are very similar in behavior to what is common in the industry.
+
+And so the UI is pretty intuitive. Most people who try it out get familiar with it within literally seconds.
+
+Wesley:
+Right. It's just the standard: up, down, right, left, and center button.
+
+Venkatesh:
+That's right. That's right. And in addition to that, we have four shortcut keys for really commonly used functions like record or  the back button, the context menu, the home key.
+
+So those are dedicated buttons. So in the center of the top half of the unit is the cursor pad, you know, with the arrow keys and the select or OK button. And then in four corners, there are these four buttons that I just mentioned, you know, home, back, context menu, etc.
+
+And then the bottom half of the keypad is a T9 keypad. So that gives you two functions, you know, one, there are shortcut keys there as well to directly take you to individual apps. And it also works as a alphanumeric keypad to quickly enter text for searching or naming files, etc.
+
+Wesley:
+Can you, and if you can, where do you install apps? What store can you install apps from?
+
+Venkatesh:
+That's a great question. It is not intended that, at least, you know, in the first launch, that people would go out and install apps from like the Google Play Store. That's what I meant by, you know, Android being under the hood.
+
+So we have our apps on top of it and we will continue to develop new apps. At some point in time, we are considering enabling what is commonly known as sideloading. So pick an app and download it separately and install it.
+
+Wesley: An APK file.
+
+Venkatesh: An APK file, exactly. We'll very likely sort of initially provide like a list of curated apps that we have kind of checked out and which are known to work well. And but I mean, you know how it goes, right?
+
+You know, in theory, you can download any app and, you know, quickly break the system. Yeah, we don't want that to happen unless, you know, people are really know what they're doing.
+
+Wesley:
+Does it charge with USB-C?
+
+Venkatesh:
+Yes, it does. It has a USB-C OTG port. You can use it to charge the unit as well as to connect it to external devices.
+
+So you'll be able to connect a USB flash drive to it or a USB keyboard. And you can also use it to connect to a computer, in which case you can make it appear as a mass storage device, so like an external USB hard drive or flash drive. And then you can copy files back and forth from it.
+
+So it's very convenient to interface to it. So if you've got a library of files on your PC, you want to copy them over, you can do that pretty easily.
+
+Wesley:
+What about pricing?
+
+Venkatesh:
+Yeah, so pricing, final pricing is not yet set. It's something we're working on. It depends on a few different factors, but it'll be somewhere around $300.
+
+Wesley:
+Okay, that's a lot more affordable than some of the other players.
+
+Venkatesh:
+That's exactly right. And that's kind of one of our overarching objectives to make assistive technology affordable, but with no compromises. So we're not compromising on functionality or performance or quality or durability.
+
+In fact, you know, with all of our products, we set the bar on those factors. And the goal is to make it really affordable to people all over the world. So we're hoping that with its price point and with its features, it's really going to be a game changer for many people.
+
+Wesley:
+Right. Because when you first launched the Orbit Reader 20, it was only $600. And that was just not seen before in the assistive technology market, especially for Braille displays.
+
+Venkatesh:
+That's correct. That's correct. And unfortunately, it's still not seen today other than with the Orbit Reader.
+
+Wesley:
+No, it's not. 
+
+We'll talk about other Orbit products after the break. Stick around.
+
+Have comments, questions, or feedback? Text 570-500-0665. Or email accesstechweekly@yahoo.com. We'd also love an honest rating and review, wherever you review your podcasts. Now, back to the interview.
+
+But you have launched the 20 Plus and 40 a while ago. And last year, you launched the Orbit Reader Q20 and Q40.
+
+Venkatesh:
+That is correct, yes.
+
+Wesley:
+Those are Braille displays with keyboards, basically, QWERTY keyboards.
+
+Venkatesh:
+That is correct. That's right. So they have essentially the same feature set as the Orbit Reader 40.
+
+So they have a 20- or a 40-cell Braille display. So they can work with a computer or a smartphone. And they have standalone functionality as well, such as obviously a reader and an editor, calendar, clock, and onboard Braille translator, alarm, calculator, etc.
+
+And the Q20 and Q40, instead of offering a Perkins-style keyboard, which the Orbit Reader 40 offers, they offer a QWERTY keyboard. So we recognize that there are many folks who prefer to type on a QWERTY keyboard and so we wanted to offer an option for them as well.
+
+Wesley:
+Right. And the Orbit Reader Q20 and Q40 are also a lot cheaper than competitors, of which there aren't many.
+
+Venkatesh:
+That is correct. That is correct. Yeah, the Orbit Reader Q20 is $1,100 and the Q40 is $2,000.
+
+So they're a lot less money than others.
+
+Wesley:
+Yeah, and those come with your signage-quality Braille.
+
+Venkatesh:
+That's right. All of our products include our signage-quality Braille. You know, the dots are completely firm and rigid, and they are a bit taller than the traditional Piezo displays, and they don't squish down, which makes it much easier to read.
+
+Sort of like a, you know, for the analogy with a visual, reading is a high-contrast font vs sort of low-contrast. In this case, the contrast being tactile contrast. And so it's especially great for beginners, because it helps you learn faster and read faster.
+
+And also for folks with some neuropathy.
+
+Wesley:
+That's actually a really good analogy, because I had an Orbit Reader 20, I've seen a 20 Plus, I had a Q40 for a while, and yeah, the Braille is really taller and harder than the other displays I've worked with. Another product you've launched fairly recently is the Orbit Speak, which some people on a mailing list asked, could you use the Orbit Speak as a media player?
+
+Venkatesh:
+Yes, so the Orbit Speak comes with a media player out of the box. It essentially can play the same kinds of files, both audio as well as document files, that the Orbit Player can. But it is sort of a very different form factor.
+
+It's got a Perkins-style keyboard. For those folks who are familiar with our Orbit Reader 20 or 20 Plus product, it's essentially exactly the same keyboard. And the device is basically the size of that keyboard.
+
+It's about 3 inches by 6 inches wide, and about 0.5 inches thick. And very, very pocketable, very lightweight. And it's got all of the functions that we just talked about, but also offers an editor.
+
+So yes, you absolutely can use it as a media player.
+
+Wesley:
+Right. And that's more expensive than the Orbit Player. Or is it? Yeah, I think it is. 
+
+So if you just want a media player, the Orbit Player might be a better option for you.
+
+Venkatesh:
+That is correct. They are targeting different markets, different types of use cases. And yes, there are two models that we offer, the Orbit Speak and the Orbit Speak Plus.
+
+The Orbit Speak has got a media player, but it can only read text and braille files. Whereas the Plus model can read the more complex file formats also, such as PDFs and Docx, HTML, DAISY, etc. And the price points are $150 apart.
+
+So the Orbit Speak is $599, and the Orbit Speak Plus is $749.
+
+Wesley:
+And that's exactly the, well, the Orbit Speak is exactly the same price as the Orbit Reader 20 was at launch.
+
+Venkatesh:
+That's right. That's right. Yeah, that's exactly right.
+
+And the Plus model also has internet radio, the Podcatcher, it has a voice recorder, which the Orbit Player also has. So the Orbit player also has a voice recorder, FM radio.
+
+And the Plus model also offers library access and all of the same voices, Vocalizer, Google voices, etc.
+
+Wesley:
+Does the standard Orbit Speak have internet functionality at all?
+
+Venkatesh:
+You can also connect it to a computer.
+
+Wesley:
+Oh, okay.
+
+Venkatesh:
+Yes, it does. So it has internet functionality. So for instance, over the air updates are automatic, or you can choose to do it manually as well.
+
+But it does have internet access. And you can also upgrade the standard model to the Plus model at any time.
+
+Wesley:
+Is there any products that you'd like to talk about that we haven't mentioned or anything that's coming up?
+
+Venkatesh:
+Yeah, so I think the other products that we have launched recently are also our multi-line displays, the Orbit Slate. So we have two models of those. They've been on the market for about a year and a half now.
+
+Yeah, and we announced them year before last, started shipping them early last year. And so we have two models. One is called the Orbit Slate 5 20, which offers five lines of 20 cells.
+
+And the second model is called the Orbit Slate 3 40 and offers three lines of 40 cells. They both have the same kind of functionality that comes with the Orbit Reader 40. So a few built-in apps like a calculator and calendar, the ability to take notes, of course, the ability to read and connect to other devices with screen readers.
+
+The goal there is to provide multi-line Braille functionality with our signage quality braille, the true Braille spacing, so the actual standard spacing between cells. And they also are intended for things that require a good view of spatially arranged information, such as tables or math equations or music, things that require multiple lines being viewable simultaneously in order to make a proper sense of their relationship. So we actually offer two reading and editing modes.
+
+One is what we call the flow mode, where if there's a line of text at the end of that line of the display, it'll simply break and flow on to the next line. But if you have something like a table with a large number of columns and rows, that's not really a great way to view a table, right? You kind of want to view a table so that its rows and columns are arranged spatially. 
+
+Wesley: Exactly.
+
+So have Windowed mode, Windowed reading or Windowed editing mode, maintains that relationship. And so the display becomes a window which can be scrolled around your content and maintains that, you know, 5x20 or 3x40 cell configuration.
+
+Wesley:
+Right. That's really cool. I didn't know they actually launched already.
+
+But what's the price point of those?
+
+Venkatesh:
+Right. So the Orbit Slate 3 40 is $4,295. And Orbit Slate 5 20 is $3,695 US.
+
+Wesley:
+What about the Optima? We've heard a lot about that. When is it coming?
+
+And for those who don't know, what is it?
+
+Venkatesh:
+Right. So the Optima is a Braille laptop computer. It's everything that you would expect from a standard Windows laptop.
+
+So it runs Windows 11 now and, you know, whatever the latest version of Windows that is released by Microsoft is. It has internally exactly the same components that you would expect in a laptop. So, you know, an Intel architecture or AMD chipset on a motherboard.
+
+Some of the unique things about it are that, you know, unlike a standard laptop, which has an LCD display, it does not have an LCD display. Instead, it is basically a keyboard. And it's a full-size laptop keyboard without a numeric keypad to keep it compact.
+
+And then below the keyboard, meaning towards the user, is a line of braille. And we're going to be offering it in multiple sizes, you know, 20 cells as well as 40 cells. And the laptop side of things is completely configurable as well as the Braille.
+
+Actually, we're going to offer Piezo as well as the Orbit True Braille cells. And for the laptop components, you know, you'll be able to choose the kind of processor you want, the amount of memory, the amount of storage, and also the ports are configurable. So, you can choose to have, you know, four USB-C ports or a mix of USB-A and USB-C or an HDMI port if you wish to connect an external monitor or a projector.
+
+So, it uses components from Framework. Framework is a company in the Bay Area that has developed a line of completely configurable laptops. They're, you know, amazingly modular and offer a mainstream product, mainstream technology that is state-of-the-art and not force users to use, you know, to be stuck with special purpose technology.
+
+We believe that exposing even, you know, youngsters to mainstream technology, you know, laptops and PCs and mainstream software and operating systems is a better path than sort of first having to learn with a note taker. And then when y enter college or the workplace, having to learn a mainstream platform like Windows or macOS essentially from scratch, the Optima is done under a joint venture company between Orbit and Adi Kushnir from Israel. The company is named AccessMind, and that's the brand that we're going to be selling the Optima under.
+
+To answer your question about when is it coming out, yes, unfortunately, we've had some significant delays due to many reasons, including the wars, and that has resulted in a delay in development. Also, the development is extremely complex. This being a laptop, there are a lot more requirements with respect to compliance testing, etc.
+
+And so the development effort and the costs are significantly higher, and that has resulted in some unexpected delays. We expect it to launch in about a year, so towards the middle of next year is what we are currently projecting.
+
+Wesley:
+Okay, well, that sounds really interesting, and I'd love to keep talking to you about this, but we are out of time, unfortunately. So it has been great talking to you. Thank you so much for joining me.
+
+Venkatesh:
+You're very welcome, Wesley. It's been a real pleasure. Thanks for having me.
+Wesley: That wraps up Episode 9. To get in touch, email accesstechweekly@yahoo.com, or text 570-500-0665. You can also listen to this podcast online at wesleymartin.net/atw. Music by Andre Louis. andrelouis.com.
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
