@@ -1,0 +1,119 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Wesley: It's our 10th episode and welcome to Access Tech Weekly. This week, transcripts come to Access Tech Weekly. InnoSearch's Shop by Phone program, did it get smarter?
+
+You can now set WhatsApp on iPhone to be your default messaging and calling app. Microsoft released a new version of Copilot for Windows and it's a screen reader nightmare. APH's BrailleBlaster becomes open source and more.
+
+I'm Wesley, welcome to Access Tech Weekly and I am so glad to say that we are at episode 10. Before we get started, I just want to say the music is by Andre Louis and you can learn more at andrelouis.com. Big thanks to Andre for the music.
+
+I'm very, very excited to announce that I'm bringing transcripts to Access Tech Weekly. I assume everyone knows what they are, but they're basically text versions of the podcast. And they'll be on the website and as a link in the show notes.
+
+They're text files and I hope to make them downloadable in the future. But for now, you can view the text files in most modern web browsers. I'm using TurboScribe to transcribe them and then I'm hand-correcting them.
+
+I got an email the other day, but I lost it, unfortunately. InnoSearch launched 1-855-ShopGPT the other week and it was pretty horrible. And I was surprised to hear that they said they got an overwhelmingly positive response.
+
+And maybe it's just me, but it's not working very well for me. And they sent this email and they said, we made InnoSearch ShopGPT smarter. So I tested it and I can acknowledge, yes, they actually made it smarter.
+
+It's still not the gold standard by any means and I probably still wouldn't use it to shop by phone, but it's definitely smarter and more accurate. They also changed the voice, which is a bonus. Since they were having problems with address recognition, they now transfer you over to Stripe to capture your address as well as your credit card number, which was already in effect before they made these improvements.
+
+They also launched new phone numbers for users in other countries. I don't have the email anymore, but I think it was UK, Canada, and Australia. And there might've been a few others.
+
+WhatsApp for iPhone can now be your default messaging and phone app. This comes probably due to antitrust. I don't have a lot of information on this, but I know a lot of iPhone users will be happy because especially outside of the US, it is a very common platform to message and call people on.
+
+Now, get ready for a rant because Microsoft released a new Copilot app, and the other day, I got it. I think it was actually yesterday, which I'm recording this on Thursday night.
+
+And it is outrageously horrible. Let me give you a little demonstration. So to launch Copilot, I'll press the Windows key.
+
+NVDA: Start Window.
+
+Wesley: Now press C-O-P. 
+
+NVDA: Copilot.
+
+Wesley: And I'll press Enter.
+
+NVDA: Copilot Pane.
+
+Wesley: Now I'll tab.
+
+NVDA: More options button.
+
+Wesley: Not too bad yet. 
+
+NVDA: Message Copilot edit blank.
+
+Wesley: Okay, so it looks pretty good. 
+
+NVDA: Think Deeper Button. Message Copilot edit blank.
+
+Wesley: So I'll just type a message. And I'm going to type a complex message just to see why I'm not impressed with this app. 
+
+NVDA: What are the most popular candy brands in the United States? List at least ten.
+
+Wesley: Now, I'll press Enter to send this message. One thing you notice, it doesn't say anything, which, you know, not a big, big deal, but it would be useful.
+
+NVDA: More options button.
+
+Wesley: Now I'm Shift-tabbing. ... And that is a blank space for some reason.
+
+NVDA: Copilot uses AI. Check for mistakes. Settings link. List. What are the most popular...
+
+Wesley: So here's my message list. Now I'll down arrow, and listen.
+
+NVDA: Here are 10 of the most popular candy brands in the United States. 1. Reese's Peanut Butter Cups. 2. M&M's. 3. Hershey's Bars. 4. KitKat. 5. Snickers. 6. Twix. 7. Milky Way. 8. Skittles. 9. Starburst. 10. Sour Patch Kids. These brands are loved for their unique flavors and textures, making them staples in American candy culture. Which one is your favorite? Two of two.
+
+Wesley: Okay, so that wasn't quite the result I was aiming for, but first of all, a few notes. You can't navigate this message at all, other than using NVDA's review cursor.
+
+NVDA: are... ten... of... the...
+
+[Speaker 1]
+Or something like that. But otherwise, no navigation at all. And you can't enable browse mode, So that's not helpful.
+
+NVDA: Here are... 2 button. 3 button. 
+
+Wesley: And what are these?
+
+NVDA:  Two button. One button.
+
+Wesley: I believe these are citations.
+
+NVDA: Two button. Three button. Button. Copilot uses...
+
+Wesley: They're very nicely labeled, as you can see. (laughs)
+
+NVDA: Learn more... More... Message Copilot edit blank.
+
+Wesley: Okay. Now, I'll say:
+
+NVDA: Give a brief summary of each brand's produncts.
+
+Wesley: I seem to have a spelling error.
+
+NVDA: Dot. Products. S-P-R-O-U-C-N-T-N-C-T-S.
+
+WEsley: And I'll send it with enter, and I'll Shift-Tab.
+
+NVDA: More... Co... settings link. List.
+
+Wesley: Now it should happen.
+
+NVDA: Sure thing. Here's a brief overview of each brand's signature products. 1. **Reese's Peanut Butter Cups**: Famous for their perfect blend of creamy peanut butter and rich milk chocolate. Available in various sizes and shapes. (Speech rate gets very fast, skipping over the most part of the message, then slows down again.) Often used for s'mores. They also offer flavors like Dark Cho... Four of Four.
+
+Wesley: As you can see, it cut off the message. And there is seemingly no way to read the rest of the message. Even when I use NVDA's object navigation.
+
+NVDA: No next. Give me a brief sum... Sure thing... Here's... list item one of one. Reese's Peanut Butter CupsL Famous for their perf...
+
+Wesley: So, now I can navigate it.
+
+NVDA: 2... 3... 4. KitKat: Known for their iconic wafer layers covered in smooth chocolate. They come in... no objects...
+
+[Speaker 1]
+But it's still not acceptable that we should not be able to read the full message easily or navigate it very easily. I have submitted feedback to Microsoft, and I would urge you to do the same. 
+
+APH just introduced BrailleBlaster version 3.
+And this time, they made it open source. Yes. So, it is now available under the GNU Public License, or GPL.
+
+And now with version 3, there are a few bug fixes and performance improvements and things like that. You can find more information at brailleblaster.org, and you can download the release at brailleblaster.org/download. This is a very exciting development because more open source is always good, in my opinion.
+
+We're always looking for feedback, so get in touch. Access Tech Weekly at yahoo.com or text 570-500-0665. You can also listen and read the podcasts online at WesleyMartin.net/ATW. And if you have the chance, we would really appreciate an honest rating and review.
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
