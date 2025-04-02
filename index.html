@@ -12,17 +12,30 @@
     </style>
 </head>
 <body>
-<p>Welcome to Wesleymartin.net.<br>Website Version: 8.4<br>Last Updated March 30, 2025<p>
-<nav>
+<p>Welcome to Wesleymartin.net. Website Version: 9.0. Last Updated April 2, 2025<p><button onclick="toggleText()">What's New</button>
+    <div id="content">
+        <p>Now, there's a blog link in the navigation bar on all pages, which leads to wesleymartin.net/blog. Plus, shortened the image description on this page for clarity. Plus, added a new log post.</p>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("content").style.display = "none"; // Ensures it's hidden on load
+    });
+
+    function toggleText() {
+        var content = document.getElementById("content");
+        content.style.display = (content.style.display === "none") ? "block" : "none";
+    }
+</script><nav>
 <nav>
         Current Page <a href="index">Home</a><br>
             <a href="/audiobooks">I'm an Audiobook Narrator!</a><br>
             <a href="/atw">Access Tech Weekly</a><br>
-            <a href="/training">Computer Training for the Blind</a><br>
+			<a href="/blog">Blog</a><br>
+			<a href="/training">Computer Training for the Blind</a><br>
 			<a href="/wikiarticle">Braille Wikipedia Articles</a><br>
     </nav>
   <div class="container">
-    <img src="media/Wesley_Using_eReader.jpg" alt="Wesley Martin, a young man wearing a blue and black plaid shirt, sits at a table using a Zoomax NLS eReader. The table is covered with a light-colored patterned tablecloth. The background shows a dining area with a ceiling fan, a refrigerator, a door with a window, and a calendar on the wall.">
+    <img src="media/Wesley_Using_eReader.jpg" alt="Wesley Martin sits at a table using a Zoomax NLS eReader. He wears a blue and black plaid shirt.">
       <h1>Hi! I'm Wesley Martin!</h1>
     <p>Audiobook narrator, podcaster, blogger, and tech enthusiast.</p>
   

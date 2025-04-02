@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Martin's Blog</title>
+    <style>
+        .iframe-container {
+            width: 300px; /* Match this with the A-Frame plane width */
+            height: 30px; /* Match this with the A-Frame plane height */
+        }
+    </style>
+</head>
+<body><nav>
+<a href="index">Home</a><br>
+<a href="/audiobooks">I'm an Audiobook Narrator!</a><br>
+<a href="/atw">Access Tech Weekly</a><br>
+Current Page <a href="/blog">Blog</a><br>
+<a href="/training">Computer Training for the Blind</a><br>
+<a href="/wikiarticle">Braille Wikipedia Articles</a><br>
+    </nav>
+      <h1>Hi! I'm Wesley Martin!</h1>
+    <p>And this is my blog. Technology, books, and anything else.</p>
+<p>Get New Posts in your email:</p>
+<form id="subscribeForm" action="https://formspree.io/f/mdkewaja" method="POST" onsubmit="return showConfirmation(event)">
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required><br>
+  <button type="submit">Subscribe</button>
+</form>
+
+<script>
+  function showConfirmation(event) {
+    event.preventDefault(); // Prevent form from submitting immediately
+
+    // Hide form and show confirmation message
+    const form = document.getElementById("subscribeForm");
+    form.innerHTML = "<p>Thank you for subscribing! You'll receive new posts in your email.</p>";
+
+    // Submit the form in the background
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    });
+
+    return false; // Prevents default form submission
+  }
+</script>
+<h2>Posts</h2>
+<h3><a href="https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html">From ComputerWorld: Mozilla Unveils Gmail Challenger, Thundermail</a></h3>
+<p>April 2, 2025</p></body>
+<footer>Copyright Wesley Martin.</footer>
+</html>
