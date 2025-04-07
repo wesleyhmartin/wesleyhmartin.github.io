@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Access Tech Weekly</title>
+    <link>https://wesleymartin.net/atw</link>
+    <description>Welcome to Access Tech Weekly, where we discuss the latest in technology from a blindness perspective.</description>
+    <language>en-us</language>
+    <copyright>Attribution Required. Not for commercial use.</copyright>
+    <itunes:author>Wesley Martin</itunes:author>
+    <itunes:owner>
+      <itunes:name>Wesley Martin</itunes:name>
+      <itunes:email>pod@wesleymartin.net</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Accessibility"/>
+    <itunes:category text="Disability"/>
+    <image>
+      <url>https://wesleymartin.net/mmedia/atwcoverart.jpg</url>
+      <title>Access Tech Weekly</title>
+      <link>https://wesleymartin.net/atw</link>
+    </image>
+    <atom:link href="https://wesleymartin.net/media/atwfeed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Remote Incident Manager AI Tools, and APH Braille Displays Updates</title>
+      <link>https://archive.org/download/atw_ep001/Remote%20Incident%20Manager%20AI%20Tools%2C%20and%20APH%20Braille%20Displays%20Updates.mp3</link>
+      <description>In this episode, I'll talk to Mike Calvo of Pneuma Solutions about Remote Incident Manager, and RIM AI Tools. Jennifer Wenzel is on the podcast with me to discuss APH Braille displays updates, and I demonstrate some of the new features on the Mantis Q40.</description>
+      <pubDate>Thu, 12 Dec 2024 22:40:44 GMT</pubDate>
+      <enclosure url="https://archive.org/download/atw_ep001/Remote%20Incident%20Manager%20AI%20Tools%2C%20and%20APH%20Braille%20Displays%20Updates.mp3" length="72102912" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep001</guid>
+    </item>
+
+  </channel>
+</rss>
