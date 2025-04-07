@@ -11,10 +11,9 @@
       <itunes:name>Wesley Martin</itunes:name>
       <itunes:email>pod@wesleymartin.net</itunes:email>
     </itunes:owner>
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
-    <itunes:category text="Accessibility"/>
-    <itunes:category text="Disability"/>
+    <itunes:category text="Tech News"/>
     <image>
       <url>https://wesleymartin.net/mmedia/atwcoverart.jpg</url>
       <title>Access Tech Weekly</title>
