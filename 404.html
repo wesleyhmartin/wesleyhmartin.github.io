@@ -30,4 +30,10 @@
     <p>Hey there,<br>I'm really sorry, but you either seemed to have clicked a bad link or entered a bad URL.<br>If it was a bad link, do me a favor and <a href="mailto:contact@wesleymartin.net">please report it.</a><br>Thanks,<br>Wesley</p>
     <p><a href="/">Go back to the home page</a></p>
 </body>
+<script>
+  const path = window.location.pathname.toLowerCase();
+  if (window.location.pathname !== path) {
+    window.location.replace(path); // Redirects to lowercase version
+  }
+</script>
 </html>
