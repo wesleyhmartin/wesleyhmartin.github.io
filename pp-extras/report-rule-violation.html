@@ -77,9 +77,7 @@
 </head>
 <body>
 
-<h1>Submit Your Podcast Trailer</h1>
-<p>Fill out this form to send in your trailer. We'll review and get back to you soon!</p>
-
+<h1>Report Rule Violation</h1>
 <form id="subscribeForm">
   <input type="hidden" name="form-name" value="podcastForm" />
   <p hidden>
@@ -108,7 +106,7 @@
 <div id="message"></div>
 
 <footer>
-  <p>&copy; 2025 Wesley Martin. All rights reserved.</p>
+  <p>&copy; 2025 Wesley Martin.</p>
 </footer>
 
 <script>
@@ -118,7 +116,7 @@
     const formData = new FormData(form);
 
     if (formData.get('bot-field')) {
-      document.getElementById('message').textContent = "Nice try, robot 🤖";
+      document.getElementById('message').textContent = "Nice try, robot. 🤖 If you're really a human, don't fill out the hidden field.";
       return false;
     }
 
