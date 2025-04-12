@@ -30,8 +30,41 @@
 <body>
 <h1>Hey! Welcome to Promo Partners.</h1>
 <p>The basic idea is that you upload a trailer for your podcast, and you play other trailers on your podcast.</p>
-<a href="/pp-extras/upload">Upload</a>
+  <!-- Podcast submission form -->
 <button onclick="toggleText()">Please Read the Rules</button>
+    <div id="content">
+  <form id="subscribeForm" action="https://formspree.io/f/mdkewaja" method="POST" onsubmit="return handleSubmit(event)">
+    
+    <!-- Honeypot (for spam prevention) -->
+    <input type="hidden" name="form-name" value="podcastForm" />
+    <p hidden>
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <!-- Form Fields -->
+    <p><label>Podcast Title: <input type="text" name="title" required /></label></p>
+    <p><label>Your Name: <input type="text" name="name" required /></label></p>
+    <p><label>Email: <input type="email" name="email" required /></label></p>
+    <p><label>Podcast Website (Optional): <input type="url" name="website" /></label></p>
+    <p><label>Podcast Feed: <input type="url" name="feed" required /></label></p>
+    <p><label>Link to audio file (Dropbox, Drive, etc.): <input type="url" name="filelink" required /></label></p>
+
+    <!-- Hidden Redirect URL -->
+    <input type="hidden" name="redirect" value="https://wesleymartin.net/pp-extras/upload-complete.html" />
+
+    <button type="submit">Submit</button></div>
+	    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("content").style.display = "none"; // Ensures it's hidden on load
+    });
+
+    function toggleText() {
+        var content = document.getElementById("content");
+        content.style.display = (content.style.display === "none") ? "block" : "none";
+    }
+</script>
+
+  </form><button onclick="toggleText()">Please Read the Rules</button>
     <div id="content">
 <h2>Rules:</h2>
 After uploading your trailer, you must play at least one other trailer on your podcast within twenty episodes.
