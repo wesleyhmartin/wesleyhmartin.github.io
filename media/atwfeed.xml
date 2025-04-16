@@ -6,13 +6,12 @@
     <description>Welcome to Access Tech Weekly, where we discuss the latest in technology from a blindness perspective.</description>
     <language>en-us</language>
     <copyright>Attribution Required. Not for commercial use.</copyright>
-    <itunes:author>Wesley Martin</itunes:author>
+    <itunes:author>Wesley Martin and Guests, with Music by Andre Louis</itunes:author>
     <itunes:owner>
       <itunes:name>Wesley Martin</itunes:name>
       <itunes:email>pod@wesleymartin.net</itunes:email>
     </itunes:owner>
-    <itunes:explicit>clean
-	</itunes:explicit>
+    <itunes:explicit>clean</itunes:explicit>
     <itunes:category text="Technology"/>
     <image>
       <url>https://wesleymartin.net/mmedia/atwcoverart.jpg</url>
@@ -21,13 +20,63 @@
     </image>
     <atom:link href="https://wesleymartin.net/media/atwfeed.xml" rel="self" type="application/rss+xml" />
 
+
+
+
+    <item>
+      <title>iPhone SE 4th Gen Will Launch Next Week, Running AI Locally, Capsys Has a New Mobility Aid, and More</title>
+	  <author>Wesley Martin, with music by Andre Louis</author>
+      <link>https://wesleymartin.net/atw</link>
+      <description>Next Friday, Amazon will no longer let you download your Kindle books. Google Play Books on iOS will now let you complete your purchases through the Google website. Google Tasks is now it's own website, I started using Visual Studio Code, Apple released a new iPhone, and more.</description>
+      <pubDate>Thu, 20 Feb 2025 22:18:13 GMT</pubDate>
+      <enclosure url="https://https://archive.org/download/atw_ep005/iPhone%2016E%2C%20Download%20Your%20Kindle%20Books%20While%20You%20Can%2C%20Google%20News%2C%20and%20More.mp3" length="23658496" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep005</guid>
+	  <itunes:duration>00:09:51</itunes:duration>
+	  <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
+      <title>iPhone SE 4th Gen Will Launch Next Week, Running AI Locally, Capsys Has a New Mobility Aid, and More</title>
+	  <author>Wesley Martin, with music by Andre Louis</author>
+      <link>https://wesleymartin.net/atw</link>
+      <description>iPhone SE 4th Generation will be released next week. Apple has launched a TV app for android. Capsys has launched a new product, the KapX Mobility Aid. Innosearch AI is now offering 1% unlimited cashback on all orders. It's Be My Eyes 10th anniversary! Plus, My Mantis is in surgery, I tried running AI locally, and so much more.</description>
+      <pubDate>Thu, 13 Feb 2025 18:58:47 GMT</pubDate>
+      <enclosure url="https://archive.org/download/atw_ep004/iPhone%20SE%204th%20Gen%20Will%20Launch%20Next%20Week%2C%20Running%20AI%20Locally%2C%20Capsys%20Has%20a%20New%20Mobility%20Aid%2C%20and%20More.mp3" length="15519744" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep004</guid>
+	  <itunes:duration>00:16:09</itunes:duration>
+	  <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>News Tidbits, Galaxy Unpacked, and A Long Tyrade about the Joys of Custom Domains</title>
+	  <author>Wesley Martin, with music by Andre Louis</author>
+      <link>https://wesleymartin.net/atw</link>
+      <description>This time, CES, the Consumer Electronics Show, is underway, Samsung has announced the Galaxy Unpacked event, and more! Music by Andre Louis. <a href="andrelouis.com">andrelouis.com</a>.</description>
+      <pubDate>Thu, 09 Jan 2025 21:11:00 GMT</pubDate>
+      <enclosure url="https://archive.org/download/atw_003/News%20Tidbits%2C%20Galaxy%20Unpacked%2C%20and%20A%20Long%20Tyrade%20about%20the%20Joys%20of%20Custom%20Domains.mp3" length="8683520" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep003</guid>
+	  <itunes:duration>00:18:04</itunes:duration>
+	  <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>Meta Glasses and iOS Updates and More</title>
+	  <author>Wesley Martin, with music by Andre Louis</author>
+      <link>https://wesleymartin.net/atw</link>
+      <description>You can now call 1-800-Chat-GPT, or message it on WhatsApp. The Meta Ray-Ban Glasses get a new update, as well as iOS. Also, Google's <a href="notebooklm.google.com">NotebookLM</a> gets an interactive audio overview mode where you can talk to two AI "podcast hosts" about anything. Get in touch! Call 570-500-0665, or email AccessTechWeekly@Yahoo.com. Also visit <a href+"wesleymartin.net/atw">our website</a>.</description>
+      <pubDate>Mon, 06 Jan 2025 19:00:16 GMT</pubDate>
+      <enclosure url="https://ia800706.us.archive.org/6/items/at2_ep002/Meta%20Glasses%20and%20iOS%20Updates%20and%20More.mp3" length="28950528" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep002</guid>
+	  <itunes:duration>00:30:09</itunes:duration>
+	  <itunes:episode>2</itunes:episode>
+    </item>
     <item>
       <title>Remote Incident Manager AI Tools, and APH Braille Displays Updates</title>
-      <link>https://archive.org/download/atw_ep001/Remote%20Incident%20Manager%20AI%20Tools%2C%20and%20APH%20Braille%20Displays%20Updates.mp3</link>
+	  <author>Wesley Martin with Mike Calvo and Jennifer Wenzel, with music by Andre Louis</author>
+      <link>https://wesleymartin.net/atw</link>
       <description>In this episode, I'll talk to Mike Calvo of Pneuma Solutions about Remote Incident Manager, and RIM AI Tools. Jennifer Wenzel is on the podcast with me to discuss APH Braille displays updates, and I demonstrate some of the new features on the Mantis Q40.</description>
       <pubDate>Thu, 12 Dec 2024 22:40:44 GMT</pubDate>
       <enclosure url="https://archive.org/download/atw_ep001/Remote%20Incident%20Manager%20AI%20Tools%2C%20and%20APH%20Braille%20Displays%20Updates.mp3" length="72102912" type="audio/mpeg"/>
       <guid isPermaLink="false">atw_ep001</guid>
+	  <itunes:duration>01:13:20</itunes:duration>
+	  <itunes:episode>1</itunes:episode>
     </item>
 
   </channel>
