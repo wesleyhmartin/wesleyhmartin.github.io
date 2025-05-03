@@ -21,6 +21,17 @@
     <atom:link href="https://wesleymartin.net/media/atwfeed.xml" rel="self" type="application/rss+xml" />
 
    <item>
+	   <title>A new look and feel for the podcast, I got a package in the mail, why are there so many ChatGPT models, and more</title>
+	   <author>Wesley Martin, with music by Andre Louis and Infraction and Viceovers by ElevenLabs</author>
+      <link>https://wesleymartin.net/atw</link>
+      <description>A new look and feel for the podcast. Working with coding and APIs is more annoying than I thought it would be. I launched a podcast cross-promotion service. I got a package in the mail. Why are there so many ChatGPT models? And more. <a href="https://wesleymartin.net/media/transcripts/0101.txt">Transcript</a> Music by Andre Louis and infraction. VOiceovers by ElevenLabs.</description>
+      <pubDate>Sat, 3 May 2025 9:00:00 GMT</pubDate>
+      <enclosure url="https://archive.org/download/atw_ep011/ATW11.mp3" length="9019392" type="audio/mpeg"/>
+      <guid isPermaLink="false">atw_ep011</guid>
+	  <itunes:duration>00:09:23</itunes:duration>
+	  <itunes:episode>11</itunes:episode>
+    </item>
+   <item>
 	   <title>ShopGPT Updates, You're Lucky if You Don't Have the New Copilot App Yet, and WhatsApp Can Now be Your Default Messaging and Calling App on iPhone</title>
 	   <author>Wesley Martin, with music by Andre Louis</author>
       <link>https://wesleymartin.net/atw</link>

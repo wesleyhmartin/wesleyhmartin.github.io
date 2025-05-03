@@ -1,0 +1,75 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+(Voiceover] You're listening to Access Tech Weekly. 
+Hi, I'm Wesley. This week, a new look and feel for the podcast. Working with coding and APIs is more annoying than I thought it would be. I launched a podcast cross-promotion service. I got a package in the mail. Why are there so many ChatGPT models? And more. 
+[Jingle] Access Tech Weekly. 
+
+Hey there, so glad you could join me for episode 11 of Access Tech Weekly. First of all, I want to address a very timely topic, and this is about tariffs and how Trump's presidency is affecting the blind community.
+
+I won't get into it much, but I just wanted to say I'm a little bit worried about funding cuts to important services, such as the National Library Service, things like that, but we don't have any hard-hitting proof of that yet. I don't consider myself to be politics-savvy, and neither do I have enough interest in politics to pursue that. However, I will say that if you have any feedback (please don't make it too shouty) but you can get in touch, and here's how to do that.
+
+[Voiceover] Have a comment or question? Wesley@WesleyMartin.net or text 570-500-0665. 
+
+I'm done transferring to a self-hosting model, and the podcast gets a fresh feel. I'd like to talk a little bit about that.
+
+I have been hosting with Acast for a while, and their accessibility was ... horrible. So I switched to Spotify for Creators, but I don't know ... I was still, I don't know.
+
+I actually started first with Buzzsprout, but their free plan is pretty stingy. So I decided, why not go with a self-hosted model? Because I own a domain. I mean, it's on GitHub Pages, but they have a 1GB limit for the free plan.
+
+So I transported my RSS feed to my domain, WesleyMartin.net, and then I uploaded all my audio to archive.org. So archive.org is a place where the internet is archived, I guess. So I uploaded my audio there, and that is where I put my episodes, and then I prepended op3.dev./e/ to every audio URL, so that it appears on an OP3 public page. So that is done, and also I wanted to make a fresh new intro with the radio imaging library I found, and thanks to Andre Louis' music.
+
+So I did that, and then I did a reverse hit, and my jingle, which I'm kind of proud of. 
+
+[Jingle] Access Tech Weekly. 
+
+Then I created this whole brand of voiceovers, and I'm going to play one for you now, both to illustrate it and as a segue to our next topic.
+
+[Voiceover] This is Access Tech Weekly: Tech, the blind way. Thanks to Andre Louis and Infraction for the music, and to ElevenLabs for the voiceovers.
+
+Learn more in the description. Visit their website, andrelouis.com, inaudio.org, and elevenlabs.io, respectively. Now, more Access Tech info from a blindness perspective.
+
+I've been working on a bulk calling solution for a non-profit. Basically, we have to call people about meetings and to remind them about upcoming events and things like that, and I've tried a bunch of different services. We don't have a big budget, so I wanted to find one of the most affordable options while still being easy to set up, and ChatGPT pointed me to Twilio.
+
+I went to Twilio, and I looked at the pricing options, and I was like, okay, whatever, we'll go with this. It starts at $0.014/minute for placing calls, and you can also do SMS and email and a bunch of other stuff, but I just need calls. Now, after I had paid $20, I asked ChatGPT if there was a web interface for Twilio, and it said no.
+
+I mean, there is, but it's called Twilio Studio, and it's kind of complicated, and I kind of found that out. So I essentially had to create a Python file, which, for those who don't know, is a type of computer code, and put the script and call the API, and oh, and then I couldn't just tell it to play an audio file when it answered the call. I had to link to a twiML file, which is a type of Twilio-specific XML, and it had to tell Twilio to play the audio file, and I was having all kinds of stuff going wrong with this, and finally the call went through, and I answered, waiting for the audio file to play, and it said, "We're sorry, an application error has occurred. Goodbye."
+
+Yeah, the audio wasn't quite that bad, but anyway, you get the drift. Anyway, I ended up forwarding the call, so I called the people, and then when they answered, using that voice, I told them to wait a moment, because this is a message from so-and-so nonprofit, and then I forwarded the call to my Google Voice number, which I put the message that I wanted to broadcast as the voicemail greeting.
+
+This is very finicky, but it works, so yeah. What shall I say? 
+
+[Voiceover] It's time for the podcast, and the app, of the week.
+
+This week, I'm recommending the next-to-latest episode of Twenty Thousand Hertz. It's about sonic accessibility in Apple. Also, I'm recommending the Thunderbird app. It's available for mobile, and I can't attest to that accessibility, but for Windows, it's an awesome email client, calendar, RSS reader, and so much more.
+
+The other day, I received a really huge package in the mail, and it was from NLS, and I had no idea what it would be, so I opened it, and it ended up being a Crossword Extravaganza magazine. I'd never gotten this before. This is the first time I had gotten it.
+
+Basically, it's a bi-yearly issue of a magazine, and it had 14 volumes in this case, so, you know, you might unsubscribe after a few issues. Anyway, you get a bunch of crossword puzzles. You get what they call cornerstones.
+
+You get cryptic crosswords. Two volumes alone are dedicated to the solutions, and I have a problem. The crosswords in the crossword puzzles themselves, the spaces where you're supposed to fill in the letters, are represented by a Braille hyphen.
+
+That's a problem because you can't fill in the letters, either with a slate and stylus or a Brailler. So, how do you fill it out? I tried using a Brailler with a different Braille paper, but it was just kind of finicky. Anyone have any suggestions? Get in touch.
+
+Recently, I launched a service called Promo Partners. Basically, you can upload your podcast trailer, and other podcasters will play it on their podcast, and you can play other trailers on your podcast. It's called Promo Partners.
+
+You can learn more at WesleyMartin.net/pp. I didn't have any trailer uploads yet, and I'm hoping that I will, because I spent, oh, about a day on it. So, it's not, you know, a huge project, but, you know, I'm just hoping to get some trailers.
+
+But, if you'd like to learn more, you can always get in touch. 
+
+I consider myself, as you probably know, somewhat of a tech guru, and I consider myself pretty proficient in AI. For example, ChatGPT.
+
+I know what all the models are, or so I thought. So, I knew there was 4O. I knew there was O1. There was O1 Mini. There was O3 Mini.
+
+And I didn't know there was not O3 until just recently. And then they released O4 Mini, and there was no O4 yet. And then they released 4.5, which is the most weird.
+
+Okay, either go to 5 or then 4.1. Why 4.5? So, they released ChatGPT 4.5, and then next they released 4.1. This is getting crazy. Just allow me a little rant here. Why can't they go in order? Now, I realize why they went from O1 to O3, because O2 is an English cellular carrier.
+
+Anyhow, then they had 0O3 Mini, and then now they have O3, and now they have O4 Mini, and it's just very, very complicated. And we're still getting on ChatGPT 5, even though we've had three releases since ChatGPT 4. We've had 4O, 4.5, and 4.1, plus all the Nano and Mini models. Wow, it's just hard to keep up.
+
+That's going to wrap up this ... delayed edition of Access Tech Weekly, Episode 11. Look for the next one on Saturday, May 10th. I'm Wesley Martin.
+
+See you next week. 
+
+[Jingles] Access Tech Weekly.
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
