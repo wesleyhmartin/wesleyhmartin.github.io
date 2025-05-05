@@ -8,7 +8,7 @@ feed_title = "Duke DuVall Message of the Day"
 feed_link = "https://wesleymartin.net/dukeduvall.xml"
 feed_description = "Daily messages from Duke DuVall"
 output_path = "lotw.xml"
-days_back = 100  # One full year!
+days_back = 99  # Keep in mind this will produce 100 items
 
 headers = {"User-Agent": "RSS-Bot/1.0"}
 
@@ -52,6 +52,7 @@ rss_feed = f"""<?xml version="1.0" encoding="UTF-8"?>
   <link>{feed_link}</link>
   <description>{feed_description}</description>
   <language>en-us</language>
+  <generator>QuickRSS by Wesley Martin</generator>
 {os.linesep.join(rss_items)}
 </channel>
 </rss>"""
