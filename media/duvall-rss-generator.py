@@ -8,7 +8,7 @@ feed_title = "Duke DuVall Message of the Day"
 feed_link = "https://wesleymartin.net/dukeduvall.xml"
 feed_description = "Daily messages from Duke DuVall"
 output_path = "lotw.xml"
-days_back = 365  # One full year!
+days_back = 100  # One full year!
 
 headers = {"User-Agent": "RSS-Bot/1.0"}
 
@@ -41,6 +41,9 @@ while current_date <= today:
   </item>"""
         rss_items.append(item)
     current_date += datetime.timedelta(days=1)
+
+# Reverse the list to get latest first
+rss_items.reverse()
 
 rss_feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
