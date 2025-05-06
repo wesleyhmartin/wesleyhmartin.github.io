@@ -7,6 +7,14 @@
   <language>en-us</language>
   <generator>QuickRSS by Wesley Martin</generator>
   <item>
+    <title>Message of the Day - May 06</title>
+    <enclosure url="https://www.dukeduvall.com/MOTD/2025/05/2025-05-06.mp3" type="audio/mpeg"/>
+    <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+    <guid>https://www.dukeduvall.com/MOTD/2025/05/2025-05-06.mp3</guid>
+    <link>https://www.dukeduvall.com/MOTD/2025/05/2025-05-06.mp3</link>
+    <description>Daily message from Duke DuVall</description>
+  </item>
+  <item>
     <title>Message of the Day - May 05</title>
     <enclosure url="https://www.dukeduvall.com/MOTD/2025/05/2025-05-05.mp3" type="audio/mpeg"/>
     <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
@@ -796,14 +804,6 @@
     <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
     <guid>https://www.dukeduvall.com/MOTD/2025/01/2025-01-27.mp3</guid>
     <link>https://www.dukeduvall.com/MOTD/2025/01/2025-01-27.mp3</link>
-    <description>Daily message from Duke DuVall</description>
-  </item>
-  <item>
-    <title>Message of the Day - January 26</title>
-    <enclosure url="https://www.dukeduvall.com/MOTD/2025/01/2025-01-26.mp3" type="audio/mpeg"/>
-    <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-    <guid>https://www.dukeduvall.com/MOTD/2025/01/2025-01-26.mp3</guid>
-    <link>https://www.dukeduvall.com/MOTD/2025/01/2025-01-26.mp3</link>
     <description>Daily message from Duke DuVall</description>
   </item>
 </channel>
