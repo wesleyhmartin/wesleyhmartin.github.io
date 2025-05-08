@@ -7,6 +7,22 @@
   <language>en-us</language>
   <generator>QuickRSS by Wesley Martin</generator>
   <item>
+    <title>Message of the Day - May 08</title>
+    <enclosure url="https://www.dukeduvall.com/MOTD/2025/05/2025-05-08.mp3" type="audio/mpeg"/>
+    <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+    <guid>https://www.dukeduvall.com/MOTD/2025/05/2025-05-08.mp3</guid>
+    <link>https://www.dukeduvall.com/MOTD/2025/05/2025-05-08.mp3</link>
+    <description>Daily message from Duke DuVall</description>
+  </item>
+  <item>
+    <title>Message of the Day - May 07</title>
+    <enclosure url="https://www.dukeduvall.com/MOTD/2025/05/2025-05-07.mp3" type="audio/mpeg"/>
+    <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+    <guid>https://www.dukeduvall.com/MOTD/2025/05/2025-05-07.mp3</guid>
+    <link>https://www.dukeduvall.com/MOTD/2025/05/2025-05-07.mp3</link>
+    <description>Daily message from Duke DuVall</description>
+  </item>
+  <item>
     <title>Message of the Day - May 06</title>
     <enclosure url="https://www.dukeduvall.com/MOTD/2025/05/2025-05-06.mp3" type="audio/mpeg"/>
     <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
@@ -788,22 +804,6 @@
     <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
     <guid>https://www.dukeduvall.com/MOTD/2025/01/2025-01-29.mp3</guid>
     <link>https://www.dukeduvall.com/MOTD/2025/01/2025-01-29.mp3</link>
-    <description>Daily message from Duke DuVall</description>
-  </item>
-  <item>
-    <title>Message of the Day - January 28</title>
-    <enclosure url="https://www.dukeduvall.com/MOTD/2025/01/2025-01-28.mp3" type="audio/mpeg"/>
-    <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-    <guid>https://www.dukeduvall.com/MOTD/2025/01/2025-01-28.mp3</guid>
-    <link>https://www.dukeduvall.com/MOTD/2025/01/2025-01-28.mp3</link>
-    <description>Daily message from Duke DuVall</description>
-  </item>
-  <item>
-    <title>Message of the Day - January 27</title>
-    <enclosure url="https://www.dukeduvall.com/MOTD/2025/01/2025-01-27.mp3" type="audio/mpeg"/>
-    <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-    <guid>https://www.dukeduvall.com/MOTD/2025/01/2025-01-27.mp3</guid>
-    <link>https://www.dukeduvall.com/MOTD/2025/01/2025-01-27.mp3</link>
     <description>Daily message from Duke DuVall</description>
   </item>
 </channel>
