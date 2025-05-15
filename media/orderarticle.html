@@ -40,22 +40,19 @@
 <body>
   <h1>Order Braille Wikipedia Article</h1>
 
-  <h2>What article would you like to order?</h2>
-  <p>Select the article you want. If you don't find your preferred article, just don't select a result.</p>
-
-  <form id="wikiForm" action="https://formspree.io/f/mdkewaja" method="POST">
-    <!-- Search Section -->
+  <div id="articleSelection">
+    <h2>What article would you like to order?</h2>
+    <p>Select the article you want. If you don't find your preferred article, just don't select a result.</p>
     <div id="searchSection">
       <label for="searchInput">Search For an Article:</label>
       <input type="text" id="searchInput" name="searchInput" required />
       <ul id="results"></ul>
     </div>
-
-    <!-- Change Button -->
     <button type="button" id="selectedArticleBtn" style="display:none;"></button>
     <br id="breakAfterBtn" style="display:none;" />
+  </div>
 
-    <!-- Hidden field for article -->
+  <form id="wikiForm" action="https://formspree.io/f/mdkewaja" method="POST">
     <input type="hidden" name="articleURL" id="articleURL" />
 
     <h2>Other details</h2>
@@ -88,7 +85,7 @@
 
     <label for="zipCode">ZIP Code:</label>
     <input type="text" id="zipCode" name="zipCode" required />
-<p>The city and state are inferred from the ZIP code.</p>
+    <p>The city and state are inferred from the ZIP code.</p>
 
     <label for="contactInfo">Email or United States/Canada Phone Number:</label>
     <input type="text" id="contactInfo" name="contactInfo" required />
@@ -172,38 +169,43 @@
       input.focus();
     });
 
-    // On form submit, fall back to search input if no URL selected
-document.getElementById('wikiForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
+    // Form submit handler
+    document.getElementById('wikiForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-  const form = e.target;
-  const formData = new FormData(form);
+      const form = e.target;
+      const formData = new FormData(form);
 
-  // Fallback to search input if no URL selected
-  if (!articleURL.value) {
-    articleURL.value = input.value.trim();
-    formData.set('articleURL', articleURL.value);
-  }
+      if (!articleURL.value) {
+        articleURL.value = input.value.trim();
+        formData.set('articleURL', articleURL.value);
+      }
 
-  const response = await fetch(form.action, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  });
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-  if (response.ok) {
-    const h1 = document.querySelector('h1');
-    const formContent = document.getElementById('wikiForm');
-    formContent.innerHTML = `<p><strong>Order submitted.</strong> Redirecting...</p>`;
+      if (response.ok) {
+        // Remove article selection section
+        const articleSelection = document.getElementById('articleSelection');
+        if (articleSelection) articleSelection.remove();
 
-    setTimeout(() => {
-      window.location.href = '../wikiarticle.html';
-    }, 5000);
-  } else {
-    alert('Something went wrong. Please try again.');
-  }
-});</script>
+        // Replace form content with success message
+        const formContent = document.getElementById('wikiForm');
+        formContent.innerHTML = `<strong>Order submitted.</strong> Redirecting...`;
+
+        setTimeout(() => {
+       
+	   window.location.href = '../wikiarticle.html';
+        }, 5000);
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    });
+  </script>
 </body>
 </html>
