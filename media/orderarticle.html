@@ -173,11 +173,37 @@
     });
 
     // On form submit, fall back to search input if no URL selected
-    document.getElementById('wikiForm').addEventListener('submit', () => {
-      if (!articleURL.value) {
-        articleURL.value = input.value.trim();
-      }
-    });
-  </script>
+document.getElementById('wikiForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  // Fallback to search input if no URL selected
+  if (!articleURL.value) {
+    articleURL.value = input.value.trim();
+    formData.set('articleURL', articleURL.value);
+  }
+
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    const h1 = document.querySelector('h1');
+    const formContent = document.getElementById('wikiForm');
+    formContent.innerHTML = `<p><strong>Order submitted.</strong> Redirecting...</p>`;
+
+    setTimeout(() => {
+      window.location.href = '../wikiarticle.html';
+    }, 5000);
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
+});</script>
 </body>
 </html>
