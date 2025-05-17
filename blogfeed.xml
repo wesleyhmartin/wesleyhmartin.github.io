@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Wesley Martin's Blog</title>
+    <link>https://wesleymartin.net/blog</link>
+    <description>Tech, books, and everything else from Wesley Martin</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 May 2025 12:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>What I Like and Don't Like About the DA2 Player</title>
+      <link>https://wesleymartin.net/media/da2.html</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 GMT</pubDate>
+      <description>A review of the DA2 Player, the good, the bad, and the neutral...</description>
+    </item>
+
+    <item>
+      <title>From Innosearch: Introducing a New Checkout Flow</title>
+      <link>https://wesleymartin.net/media/innosearch.html</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate>
+      <description>A streamlined shopping experience from Innosearch.</description>
+    </item>
+
+    <item>
+      <title>How to Fix GitHub Pages's Case-sensitivity</title>
+      <link>wesleymartin.net/media/how-to-fix-github-pages-case-sensitivity.html</link>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
+      <description>A quick fix for that GitHub Pages fluke that makes everything case-sensetive.</description>
+    </item>
+
+    <item>
+      <title>Mozilla Unveils Gmail Challenger, Thundermail</title>
+      <link>https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+      <description>This article is From Computerworld.</description>
+    </item>
+  </channel>
+</rss>

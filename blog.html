@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wesley Martin's Blog</title>
+<link rel="alternate" type="application/rss+xml" title="Wesley Martin's Blog RSS Feed" href="/rss.xml">
     <style>
         .iframe-container {
             width: 300px; /* Match this with the A-Frame plane width */
@@ -46,6 +47,29 @@ Current Page <a href="/blog">Blog</a><br>
     return false; // Prevents default form submission
   }
 </script>
+<h2>RSS Feed</h2>
+<p>The page you're on right now is also the link to the RSS feed you can subscribe to. The URL to do so is: 
+   <span id="rssUrl">https://wesleymartin.net/blog</span>
+</p>
+
+<button id="copyBtn" onclick="copyToClipboard()">Copy RSS Link</button>
+
+<script>
+function copyToClipboard() {
+    const url = document.getElementById("rssUrl").textContent;
+    const button = document.getElementById("copyBtn");
+
+    navigator.clipboard.writeText(url)
+        .then(() => {
+            button.textContent = "Copied!";
+            setTimeout(() => {
+                button.textContent = "Copy RSS Link";
+            }, 1000);
+        })
+        .catch(err => alert("Oops. We got an error. Try copying it manually."));
+}
+</script>
+
 <h2>Posts</h2>
 <h3><a href="/media/da2.html">What I Like and Don't Like About the DA2 Player</a></h3> <p>April May 17, 2025</p>
 <h3><a href="/media/innosearch.html">From Innosearch: Introducing a New Checkout Flow</a></h3> <p>April 23, 2025</p>
