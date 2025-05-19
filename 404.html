@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oops!</title>
-    <style>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error: 404</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -23,18 +22,19 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-    <h1>Sorry, You Got a Bad Apple!</h1>
-    <p>Hey there,<br>I'm really sorry, but you either seemed to have clicked a bad link or entered a bad URL.<br>If it was a bad link, do me a favor and <a href="mailto:contact@wesleymartin.net">please report it.</a><br>Thanks,<br>Wesley</p>
-    <p><a href="/">Go back to the home page</a></p>
+</style></head><body>
+<h1>Sorry, You Got a Bad Apple!</h1>
+<p>Hey there,<br>I'm really sorry, but you either seemed to have clicked a bad link or entered a bad URL.<br>If it was a bad link, do me a favor and <a href="mailto:brokenlinks@wesleymartin.net">please report it.</a><br>Thanks,<br>Wesley</p>
+<p>Here are some links to part of my site you might want to visit.</p>
+<a href="/inddex">Home</a><br>
+<a href="/blog">Blog</a><br>
+<span>Current Page</span> <a href="/projects">Projects</a><br>
+<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a><br>
 </body>
 <script>
   const path = window.location.pathname.toLowerCase();
   if (window.location.pathname !== path) {
     window.location.replace(path); // Redirects to lowercase version
-  }
+}
 </script>
-<footer>Copyright 2025 Wesley Martin</footer>
-</html>
+<footer>Copyright 2025 Wesley Martin</footer></html>
