@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>You Probably Didn't Know You Can Use Alexa on Windows</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>You Probably Didn't Know You Can Use Alexa on Windows</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  hr {
+    margin: 2rem 0;
+  }
+  ul {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    padding-left: 1.2rem;
+  }
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #005f99;
+  }
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  .nav-link {
+    display: block;
+    margin-bottom: 1rem;
+  }
+</style>
 </head>
 <body>
-<a href="../blog">Read More From My Blog</a>
-    <h1>You Probably Didn't Know You Can Use Alexa on Windows</h1>
-    <p>Update: As of June 22, my assistant is not working unless I use the wakeword.</p>
-    <hr>
-    <p>I haven't heard it talked about much, but it is possible to use Alexa on your Windows machine. Well, it used to be.
-Amazon had this app for Windows for years, until they discontinued it about one or two years ago. Sorry, I don't have precise info.
-</p><p>
-But even though it's officially discontinued, you can still download and use it. I've tested it on Windows 11, and it works fine.
-It's not the most usable app in town as far as for screen readers, but with NVDA Object Navigation and equivalents, you can manage.
-    </p>
+<a class="nav-link" href="../blog">Read More From My Blog</a>
 
-    <h2>Limitations</h2>
-    <p>
-While you can use the basic features of Alexa, there are a few limitations to keep in mind:
-    </p>
-    <ul>
-        <li>You cannot set up or manage Echo or smart home devices.</li>
-        <li>You cannot make phone calls to actual phones, only to other Alexa-enabled devices.</li>
-        <li>You cannot pay for things.</li>
-        <li>Alexa Plus is highly unlikely to be available via this app.</li>
-        <li>You cannot change the wake word.</li>
-    </ul>
+<h1>You Probably Didn't Know You Can Use Alexa on Windows</h1>
 
-    <p>
-        Now that I've dampened your enthusiasm a bit, let's download it. I tried it, and it hasn't blown up my computer ... yet:
-    </p>
-    <p>
-        <a href="https://alexa.en.softonic.com/support?dt=internalDownload">Download Alexa for Windows</a>
-    </p>
+<p>Update: As of June 22, my assistant is not working unless I use the wake word.</p>
+<hr>
+<p>
+I haven't heard it talked about much, but it is possible to use Alexa on your Windows machine. Well, it used to be. Amazon had this app for Windows for years, until they discontinued it about one or two years ago. Sorry, I don't have precise info.
+</p>
+<p>
+But even though it's officially discontinued, you can still download and use it. I've tested it on Windows 11, and it works fine. It's not the most usable app in town for screen readers, but with NVDA Object Navigation and equivalents, you can manage.
+</p>
+
+<h2>Limitations</h2>
+<p>While you can use the basic features of Alexa, there are a few limitations to keep in mind:</p>
+<ul>
+  <li>You cannot set up or manage Echo or smart home devices.</li>
+  <li>You cannot make phone calls to actual phones, only to other Alexa-enabled devices.</li>
+  <li>You cannot pay for things.</li>
+  <li>Alexa Plus is highly unlikely to be available via this app.</li>
+  <li>You cannot change the wake word.</li>
+</ul>
+
+<p>Now that I've dampened your enthusiasm a bit, let's download it. I tried it, and it hasn't blown up my computer ... yet:</p>
+<p style="text-align:center;">
+  <a href="https://alexa.en.softonic.com/support?dt=internalDownload" target="_blank" rel="noopener noreferrer">Download Alexa for Windows</a>
+</p>
+
 <h2>Comments</h2>
 <p>No comments yet. And comments should now be properly working.</p>
+
 <form action="https://formspree.io/f/mdkewaja" method="POST">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="Display Name:" required>
-<br>
-    <label for="comment">Comment:</label><br>
-    <textarea id="comment" name="Comment" rows="4" required></textarea>
-	<br>
-<button type="submit">Submit</button>
-<p>Comments will be reviewed before posting.</p>
+  <label for="name">Name:</label><br />
+  <input type="text" id="name" name="Display Name:" required />
+
+  <label for="comment">Comment:</label><br />
+  <textarea id="comment" name="Comment" rows="4" required></textarea><br />
+
+  <button type="submit">Submit</button>
+  <p>Comments will be reviewed before posting.</p>
 </form>
 
-<footer>Copyright 2025 Wesley Martin</footer></body>
+<footer>
+  Copyright 2025 Wesley Martin
+</footer>
+</body>
 </html>

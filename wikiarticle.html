@@ -1,95 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Get a Braille Wikipedia Article - Wesley Martin</title>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<!-- Bootstrap 5 CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
 
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .collapsible {
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border: none;
-            text-align: left;
-            width: 100%;
-            outline: none;
-        }
-
-        .active, .collapsible:hover {
-            background-color: #4CAF50;
-        }
-
-        .content {
-            display: none;
-            overflow: hidden;
-            background-color: #f1f1f1;
-            padding: 0 15px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            margin-bottom: 10px;
-        }
-
-        
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #4CAF50;
-        }
-</style></head><body>
-<nav>
-<a href="/inddex">Home</a><br>
-<a href="/blog">Blog</a><br>
-<a href="/projects">Projects</a><br>
-<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a><br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand text-success" href="/index">Wesley Martin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<header>
-<h1>Get  Wikipedia Article in Braille</h1>
-<p>You can now request a Wikipedia article to be completely embossed in Braille! Only $0.15 per Braille page.</p>
-</header><body>
-<h2>Get Your Article Now</h2>
-<a href="/media/orderarticle.html">Order it right from your browser.</a>
-<p>Or call 570-966-9980, text 570-500-0665, or email wesley@wesleymartin.net.<br>
-Please include:<br>
-Thename of the article or what you're looking for.<br>
-Whether it should be contracted or uncontracted, or in Computer Braille. (If not specified, we will use Uncontracted.)<br>
-What Braille code. (If not specified, we will use UEB.)<br>
-If you want single-sided or double-sided. (If not specified, we will use double-sided.)<br>
-An address to ship the article to.<br>
-And an email or phone number if we have any questions.<br>
-We will ship the article via Free Matter for the Blind or Handicapped unless otherwise specified.</p>
-<H2>Payment</H2>
-<p>You can pay via check or PayPal.</p>
-</body>
-<footer>Copyright 2025 Wesley Martin</footer>
+<header class="bg-success text-white text-center py-5 mb-4">
+  <div class="container">
+    <h1>Get Wikipedia Article in Braille</h1>
+    <p class="lead">Request a Wikipedia article embossed in Braille for just $0.15 per Braille page.</p>
+  </div>
+</header>
 
+<main class="container mb-5">
+  <section class="mb-5">
+    <h2 class="text-center mb-4">Get Your Article Now</h2>
+    <p class="text-center"><a href="/media/orderarticle.html" class="btn btn-success btn-lg">Order Online</a></p>
+    <p class="text-center">Or call <strong>570-966-9980</strong>, text <strong>570-500-0665</strong>, or email <a href="mailto:wesley@wesleymartin.net">wesley@wesleymartin.net</a>.</p>
+    <p>Please include:</p>
+    <ul>
+      <li>The name of the article or what you're looking for.</li>
+      <li>Contracted, uncontracted, or Computer Braille (default: Uncontracted).</li>
+      <li>Braille code (default: UEB).</li>
+      <li>Single-sided or double-sided (default: double-sided).</li>
+      <li>Shipping address.</li>
+      <li>Email or phone for any questions.</li>
+    </ul>
+    <p>We ship via Free Matter for the Blind or Handicapped unless otherwise specified.</p>
+  </section>
+
+  <section>
+    <h2 class="text-center mb-4">Payment</h2>
+    <p>You can pay via check or PayPal.</p>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <small>Copyright 2025 Wesley Martin</small>
+  </div>
+</footer>
+
+<!-- Bootstrap 5 JS Bundle CDN (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

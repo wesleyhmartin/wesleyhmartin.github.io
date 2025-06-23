@@ -1,77 +1,90 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wesley Martin's Blog - Wesley Martin</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
-        .iframe-container {
-            width: 300px; /* Match this with the A-Frame plane width */
-            height: 30px; /* Match this with the A-Frame plane height */
-        }
-</style></head><body><nav>
-<a href="/index">Home</a><br>
-<a href="/blog">Blog</a><br>
-<a href="/projects">Projects</a><br>
-<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a><br>
+  .iframe-container {
+    width: 300px;
+    height: 30px;
+  }
+</style>
+</head>
+<body class="bg-light text-dark">
+
+<nav class="p-3 bg-dark text-white text-center">
+  <a href="/index" class="text-white m-2">Home</a>
+  <a href="/blog" class="text-white m-2">Blog</a>
+  <a href="/projects" class="text-white m-2">Projects</a>
+  <a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor" class="text-white m-2">Contact</a>
 </nav>
-      <h1>Hi! I'm Wesley Martin!</h1>
-    <p>And this is my blog. Technology, books, and anything else.</p>
-<p>Get New Posts in your email:</p>
-<form id="subscribeForm" action="https://formspree.io/f/mdkewaja" method="POST" onsubmit="return showConfirmation(event)">
-  <label for="email">Your Email:</label>
-  <input type="email" id="email" name="email" required><br>
-  <button type="submit">Subscribe</button>
-</form>
+
+<div class="container py-5">
+
+  <h1 class="text-center">Hi! I'm Wesley Martin!</h1>
+  <p class="text-center">And this is my blog. Technology, books, and anything else.</p>
+
+  <div class="my-4">
+    <p>Get New Posts in your email:</p>
+    <form id="subscribeForm" action="https://formspree.io/f/mdkewaja" method="POST" onsubmit="return showConfirmation(event)" class="mb-3">
+      <div class="mb-2">
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" required class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+
+  <h2 class="mt-5">RSS Feed</h2>
+  <p>You can now subscribe to receive new posts via RSS. The URL to do so is:
+    <span id="rssUrl" class="fw-bold">https://wesleymartin.net/blogfeed.xml</span>
+  </p>
+  <button id="copyBtn" onclick="copyToClipboard()" class="btn btn-outline-secondary mb-4">Copy RSS Link</button>
+
+  <h2>Posts</h2>
+  <div>
+    <h3><a href="/media/deb2release.html">New Release: DEB - Emoji Describer Version 2</a></h3><p>June 19, 2025</p>
+    <h3><a href="/media/debrelease.html">New Release: DEB - Emoji Describer</a></h3><p>June 5, 2025</p>
+    <h3><a href="/media/alexaonwindows.html">You Probably Didn't Know You Can Use Alexa on Windows</a></h3><p>May 22, 2025</p>
+    <h3><a href="/media/da2.html">What I Like and Don't Like About the DA2 Player</a></h3><p>May 17, 2025</p>
+    <h3><a href="/media/innosearch.html">From Innosearch: Introducing a New Checkout Flow</a></h3><p>April 23, 2025</p>
+    <h3><a href="/media/how-to-fix-github-pages-case-sensitivity.html">How to Fix GitHub Pages's Case-sensitivity</a></h3><p>April 16, 2025</p>
+    <h3><a href="https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html">From ComputerWorld: Mozilla Unveils Gmail Challenger, Thundermail</a></h3><p>April 2, 2025</p>
+  </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  Copyright 2025 Wesley Martin. Articles from other sources are the property of their respective owners.
+</footer>
 
 <script>
   function showConfirmation(event) {
-    event.preventDefault(); // Prevent form from submitting immediately
-
-    // Hide form and show confirmation message
+    event.preventDefault();
     const form = document.getElementById("subscribeForm");
     form.innerHTML = "<p>Thank you for subscribing! You'll receive new posts in your email.</p>";
-
-    // Submit the form in the background
     fetch(form.action, {
       method: form.method,
       body: new FormData(form),
     });
-
-    return false; // Prevents default form submission
+    return false;
   }
-</script>
-<h2>RSS Feed</h2>
-<p>You can now subscribe to receive new posts via RSS. The URL to do so is: 
-   <span id="rssUrl">https://wesleymartin.net/blogfeed.xml</span>
-</p>
 
-<button id="copyBtn" onclick="copyToClipboard()">Copy RSS Link</button>
-
-<script>
-function copyToClipboard() {
+  function copyToClipboard() {
     const url = document.getElementById("rssUrl").textContent;
     const button = document.getElementById("copyBtn");
-
     navigator.clipboard.writeText(url)
-        .then(() => {
-            button.textContent = "Copied!";
-            setTimeout(() => {
-                button.textContent = "Copy RSS Link";
-            }, 1000);
-        })
-        .catch(err => alert("Oops. We got an error. Try copying it manually."));
-}
+      .then(() => {
+        button.textContent = "Copied!";
+        setTimeout(() => {
+          button.textContent = "Copy RSS Link";
+        }, 1000);
+      })
+      .catch(() => alert("Oops. We got an error. Try copying it manually."));
+  }
 </script>
 
-<h2>Posts</h2>
-<h3><a href="/media/deb2release.html">New Release: DEB - Emoji Describer Version 2</a></h3><p>June 19, 2025</p>
-<h3><a href="/media/debrelease.html">New Release: DEB - Emoji Describer</a></h3><p>June 5, 2025</p>
-
-<h3><a href="/media/alexaonwindows.html">You Probably Didn't Know You Can Use Alexa on Windows</a></h3><p>May 22, 2025</p>
-<h3><a href="/media/da2.html">What I Like and Don't Like About the DA2 Player</a></h3> <p>May 17, 2025</p>
-<h3><a href="/media/innosearch.html">From Innosearch: Introducing a New Checkout Flow</a></h3> <p>April 23, 2025</p>
-<h3><a href="/media/how-to-fix-github-pages-case-sensitivity.html">How to Fix GitHub Pages's Case-sensitivity</a></h3><p>April 16, 2025</p>
-<h3><a href="https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html">From ComputerWorld: Mozilla Unveils Gmail Challenger, Thundermail</a></h3>
-<p>April 2, 2025</p></body>
-<footer>Copyright 2025 Wesley Martin. Articles from other sources are the property of their respective owners.</footer>
+</body>
 </html>

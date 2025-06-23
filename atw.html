@@ -1,112 +1,62 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Access Tech Weekly - Wesley Martin</title>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
 
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
-        }
+<nav class="bg-light p-3 mb-4">
+<a href="/index" class="me-3">Home</a>
+<a href="/blog" class="me-3">Blog</a>
+<a href="/projects" class="me-3">Projects</a>
+<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a>
+</nav>
 
-        .collapsible {
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border: none;
-            text-align: left;
-            width: 100%;
-            outline: none;
-        }
+<header class="text-center mb-5">
+<h1 class="display-4">Access Tech Weekly</h1>
+<p class="lead">All the latest in access technology from a blindness perspective.</p>
+<p>We were mentioned in NLS's Braille Book Review and Talking Book Topics publications. (Jan-Feb 2025) A hearty thanks to NLS, and if you came from there, a special welcome!</p>
+<h2 class="text-center">Please <a href="mailto:wesley@wesleymartin.net">get in touch by email</a>, or text 570.500.0665! You can send a text or an audio message.</h2>
+<h3 class="text-center">Transcripts</h3>
+<div class="d-flex justify-content-center gap-3 mb-4">
+<a href="/media/transcripts/011.txt" class="btn btn-outline-primary btn-sm">Episode 11</a>
+<a href="/media/transcripts/010.txt" class="btn btn-outline-primary btn-sm">Episode 10</a>
+<a href="/media/transcripts/009.txt" class="btn btn-outline-primary btn-sm">Episode 9</a>
+</div>
+</header>
 
-        .active, .collapsible:hover {
-            background-color: #4CAF50;
-        }
+<main class="container mb-5">
+<iframe
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+  frameborder="0"
+  height="450"
+  style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px;"
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="https://embed.podcasts.apple.com/ca/podcast/access-tech-weekly/id1783687087">
+</iframe>
+</main>
 
-        .content {
-            display: none;
-            overflow: hidden;
-            background-color: #f1f1f1;
-            padding: 0 15px;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            margin-bottom: 10px;
-        }
-
-        audio {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #4CAF50;
-        }
-</style></head><body><nav>
-<a href="/index">Home</a><br>
-<a href="/blog">Blog</a><br>
-<a href="/projects">Projects</a><br>
-<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a>br>
-</nav><header>
-<h1>Access Tech Weekly</h1>
-<p>All the latest in access technology from a blindness perspective.</p>
-<p>We were mentioned in NLS's Braille Book Review and Talking Book  Topics publications. (Jan-Feb 2025) A hearty thanks to NLS, and if you came from there, a special welcome!</p>
-<h2>Please <a href="mailto:wesley@wesleymartin.net">get in touch by email</a>, or text 570.500.0665! You can send a text or an audio message.</h2>
-<h3>Transcripts</h3>
-<a href="/media/transcripts/011.txt">Episode 11</a><a href="/media/transcripts/010.txt">Episode 10</a><a href="/media/transcripts/009.txt">Episode 9</a></header>
-
-<div class="container">
-        
-<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/ca/podcast/access-tech-weekly/id1783687087"></iframe>    
-<footer>
-<p>Coopyright 2024-2025 Wesley Martin. Access Tech Weekly™ is a trademark of Wesley Martin.</p>
+<footer class="text-center py-3 bg-dark text-white mt-auto">
+<p class="mb-0">Copyright 2024-2025 Wesley Martin. Access Tech Weekly™ is a trademark of Wesley Martin.</p>
 </footer>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 for (var i = 0; i < coll.length; i++) {
-coll[i].addEventListener("click", function () {
-this.classList.toggle("active")
-var content = this.nextElementSibling;
-if (content.style.display === "block") {
-content.style.display = "none"
-} else {
-content.style.display = "block";
-}
-);
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

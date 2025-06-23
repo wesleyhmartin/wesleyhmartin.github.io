@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Error: 404</title>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 50px;
-        }
-        p {
-            font-size: 20px;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-</style></head><body>
-<h1>Sorry, You Got a Bad Apple!</h1>
-<p>Hey there,<br>I'm really sorry, but you either seemed to have clicked a bad link or entered a bad URL.<br>If it was a bad link, do me a favor and <a href="mailto:brokenlinks@wesleymartin.net">please report it.</a><br>Thanks,<br>Wesley</p>
-<p>Here are some links to part of my site you might want to visit.</p>
-<a href="/inddex">Home</a><br>
-<a href="/blog">Blog</a><br>
-<a href="/projects">Projects</a><br>
-<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">Contact</a><br>
-</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<h1 class="display-1 text-center">Sorry, You Got a Bad Apple!</h1>
+
+<p class="fs-5 text-center">
+Hey there,<br>
+I'm really sorry, but you either seemed to have clicked a bad link or entered a bad URL.<br>
+If it was a bad link, do me a favor and
+<a href="mailto:brokenlinks@wesleymartin.net" class="text-primary text-decoration-none">please report it.</a><br>
+Thanks,<br>
+Wesley
+</p>
+
+<p class="text-center">Here are some links to part of my site you might want to visit.</p>
+
+<div class="text-center fs-5">
+<a href="/inddex" class="btn btn-outline-primary m-1">Home</a>
+<a href="/blog" class="btn btn-outline-primary m-1">Blog</a>
+<a href="/projects" class="btn btn-outline-primary m-1">Projects</a>
+<a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor" class="btn btn-outline-secondary m-1">Contact</a>
+</div>
+
+<footer class="text-center py-3 mt-auto bg-light">
+<small>Copyright 2025 Wesley Martin</small>
+</footer>
+
 <script>
-  const path = window.location.pathname.toLowerCase();
-  if (window.location.pathname !== path) {
-    window.location.replace(path); // Redirects to lowercase version
+const path = window.location.pathname.toLowerCase();
+if (window.location.pathname !== path) {
+  window.location.replace(path); // Redirects to lowercase version
 }
 </script>
-<footer>Copyright 2025 Wesley Martin</footer></html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

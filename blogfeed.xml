@@ -7,28 +7,26 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 17 May 2025 12:00:00 GMT</lastBuildDate>
 
-
     <item>
       <title>New Release: DEB 2.0</title>
       <link>https://wesleymartin.net/media/deb2release.html</link>
-      <pubDate>Thu, 19 June 2025 00:00:00 GMT</pubDate>
-      <description>I've released a new version of my Windows pp.</description>
+      <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+      <description>I've released a new version of my Windows app.</description>
     </item>
 
     <item>
-
       <title>New Release: DEB - Emoji Describer</title>
       <link>https://wesleymartin.net/media/debrelease.html</link>
-      <pubDate>Thu, 5 June 2025 00:00:00 GMT</pubDate>
-      <description>I've released a new Windows pp.</description>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+      <description>I've released a new Windows app.</description>
     </item>
+
     <item>
       <title>You Probably Didn't Know You Can Use Alexa on Windows</title>
       <link>https://wesleymartin.net/media/alexaonwindows.html</link>
       <pubDate>Thu, 22 May 2025 00:00:00 GMT</pubDate>
       <description>It has some limitations, but still ...</description>
     </item>
-
 
     <item>
       <title>What I Like and Don't Like About the DA2 Player</title>
@@ -48,14 +46,14 @@
       <title>How to Fix GitHub Pages's Case-sensitivity</title>
       <link>https://wesleymartin.net/media/how-to-fix-github-pages-case-sensitivity.html</link>
       <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
-      <description>A quick fix for that GitHub Pages fluke that makes everything case-sensetive.</description>
+      <description>A quick fix for that GitHub Pages fluke that makes everything case-sensitive.</description>
     </item>
 
     <item>
       <title>Mozilla Unveils Gmail Challenger, Thundermail</title>
       <link>https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
-      <description>This article is From Computerworld.</description>
+      <description>This article is from Computerworld.</description>
     </item>
   </channel>
 </rss>
