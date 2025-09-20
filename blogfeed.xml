@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>Wesley Martin Blog</title>
+    <title>The Wesley Martin Blog</title>
     <link>https://wesleymartin.net/blog</link>
     <description>Tech, books, and everything else from Wesley Martin</description>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 May 2025 12:00:00 GMT</lastBuildDate>
 
     <item>
-      <title>Victor Reader STream: What I Think</title>
+      <title>Victor Reader Stream: What I Think</title>
       <link>https://wesleymartin.net/media/vrstream</link>
       <pubDate>Thu,	18 Sep 2025 00:00:00 GMT</pubDate>
       <description>I just got a Victor Stream. Here's what I think.</description>
