@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Wesley Martin — Audio Transcription Resume</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0f1724;
+    --card: #0b1220;
+    --muted: #9aa6b2;
+    --accent: #4fd1c5;
+    --accent-2: #7c5cff;
+    --glass: rgba(255,255,255,0.04);
+    --glass-2: rgba(255,255,255,0.02);
+    --text: #e6eef3;
+    --max-width: 960px;
+    --radius: 14px;
+    --gap: 20px;
+    --print-margin: 10mm;
+    --focus: 3px solid rgba(79,209,197,0.25);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+    background:
+      radial-gradient(800px 400px at 10% 10%, rgba(124,92,255,0.08), transparent 8%),
+      radial-gradient(600px 300px at 95% 90%, rgba(79,209,197,0.04), transparent 8%),
+      linear-gradient(180deg,var(--bg),#07101a 60%);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:20px;
+  }
+
+  .resume-wrap{
+    width:100%;
+    max-width:var(--max-width);
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:var(--gap);
+  }
+  .panel{
+    background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.02));
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    border:1px solid rgba(255,255,255,0.03);
+  }
+  .left{display:flex;flex-direction:column;gap:18px}
+  .avatar{display:flex;gap:12px;align-items:center}
+  .avatar .photo{
+    width:72px;height:72px;border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:28px;color:#021;
+  }
+  .contact-list,.skill-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .contact-item{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);background:var(--glass);padding:10px;border-radius:10px}
+  .contact-item strong{color:var(--text);font-weight:600;min-width:80px}
+  .skill{background:linear-gradient(90deg,rgba(255,255,255,0.01),rgba(255,255,255,0.015));padding:8px 10px;border-radius:8px;display:flex;justify-content:space-between;align-items:center}
+  .skill .bar{height:8px;border-radius:6px;background:var(--glass-2);flex:1;margin-left:12px;overflow:hidden}
+  .skill .bar > i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+  .main{display:flex;flex-direction:column;gap:18px}
+  .section{padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+  .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .section-title h2{margin:0;font-size:15px;color:var(--accent)}
+  .summary{font-size:15px;line-height:1.5}
+  .job{margin-bottom:10px;padding:12px;border-radius:10px;border:1px dashed rgba(255,255,255,0.02)}
+  .job h3{margin:0;font-size:15px}
+  .meta{color:var(--muted);font-size:13px}
+  .bullets{margin:10px 0 0 18px;color:var(--muted);line-height:1.45}
+</style>
+</head>
+<body>
+<main class="resume-wrap" id="main-content">
+
+  <!-- Left Column -->
+  <aside class="panel left">
+    <div class="avatar">
+      <div class="photo" aria-hidden="true">WM</div>
+      <div>
+        <h1 id="resume-name">Wesley Martin</h1>
+        <p class="muted">Audio Transcription • Tech Support</p>
+      </div>
+    </div>
+
+    <ul class="contact-list">
+      <li class="contact-item"><strong>Phone</strong><span>+1 (570) 500-0665</span></li>
+      <li class="contact-item"><strong>Email</strong><a href="mailto:contact@wesleymartin.net">contact@wesleymartin.net</a></li>
+      <li class="contact-item"><strong>Location</strong><span>Mifflinburg, PA</span></li>
+    </ul>
+
+    <h3 class="section-title"><span style="color:var(--accent)">Core Skills</span></h3>
+    <ul class="skill-list">
+      <li class="skill"><span>Audio Transcription Accuracy</span><div class="bar"><i style="width:90%"></i></div></li>
+      <li class="skill"><span>Active Listening & Attention to Detail</span><div class="bar"><i style="width:92%"></i></div></li>
+      <li class="skill"><span>Customer Communication</span><div class="bar"><i style="width:80%"></i></div></li>
+    </ul>
+  <!-- Right Column -->
+  <section class="panel main">
+
+    <div class="section">
+      <div class="section-title"><h2>Profile</h2></div>
+      <p class="summary">
+        Even though I am only fourteen, I am a highly attentive audio specialist with hands-on experience in listening, transcribing, and supporting clients with technical needs. Skilled at accurately capturing spoken content, working under deadlines, and translating complex information into clear written form.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><h2>Experience</h2></div>
+
+      <article class="job">
+        <h3>Audiobook Narration</h3>
+        <ul class="bullets">
+          <li>Developed acute listening skills and attention to spoken detail.</li>
+          <li>Met strict deadlines and followed detailed instructions for accurate content delivery.</li>
+          <li>Gained experience with audio editing and clear, concise communication.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Shop Online without a Computer</h3>
+        <ul class="bullets">
+          <li>Translated customer requests into accurate online orders, demonstrating precise listening and documentation skills.</li>
+          <li>Built strong communication and conflict resolution skills while assisting clients with special needs.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><h2>Education & Projects</h2></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>
+          <h3 style="margin:0">High School in Progress</h3>
+          <div class="meta">Pennfoster | Self-Paced Program</div>
+        </div>
+        <div>
+          <h3 style="margin:0">Select Projects</h3>
+          <ul class="bullets">
+            <li><strong>Technical Support:</strong> Assisted family and friends with audio and tech issues.</li>
+            <li><strong>Podcast Interview:</strong> Featured on RNIB Tech Talk, demonstrating clear verbal and written communication.</li>
+            <li><strong>Website Design:</strong> Created wesleymartin.net, showcasing attention to detail and digital literacy.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><h2>Extras</h2></div>
+      <p class="muted">Availability: Weekdays, flexible weekends. Willing to adapt to transcription software and company-specific workflows.</p>
+      <p class="muted">As I am blind, I require minor accommodations, including a screen reader.</p>
+    </div>
+
+  </section>
+</main>
+</body>
+</html>

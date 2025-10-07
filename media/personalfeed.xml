@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+
+<channel>
+<title>Wesley Martin Personal Podcast</title>
+<description>Personal podcast.</description>
+<atom:link href="https://wesleymartin.net/media/personalfeed.xml" rel="self" type="application/rss+xml"/>
+
+<item>
+<title></title>
+<enclosure url="https://cdn.example.com/episode1.mp3" length="12345678" type="audio/mpeg" />
+</item>
+
+
+</channel></rss>
