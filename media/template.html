@@ -1,67 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Template</title>
-  <style>
-    /* Minimal, readable styling */
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      line-height: 1.55;
-      color: #111;
-      background: #fff;
-      margin: 0;
-      padding: 24px;
-      max-width: 760px;
-    }
-    header small { color: #666; display:block; margin-bottom:10px; }
-    h1 { font-size: 1.9rem; margin: 0 0 8px 0; }
-    h2 { font-size: 1.25rem; margin-top: 28px; }
-    p { margin: 14px 0; }
-    .muted { color: #666; font-size: 0.95rem; }
-    blockquote {
-      margin: 12px 0;
-      padding: 12px 16px;
-      border-left: 4px solid #ddd;
-      background: #fafafa;
-    }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .price { font-weight: 600; }
-    footer { margin-top: 30px; color: #666; font-size: 0.95rem; }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83SBMLVH1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-83SBMLVH1G');
-</script>
 <body>
-  <header>
-<a href="../blog">Read More From My Blog</a>
     <h1>Title</h1>
-<h3>Comments</h3>
-<form action="https://formspree.io/f/mdkewaja" method="POST">
-  <label for="name">Name:</label><br />
-  <input type="hidden" id="post_title" name="post_title">
-  <input type="text" id="name" name="Display Name:" required />
-
-  <label for="comment">Comment:</label><br />
-  <textarea id="comment" name="Comment" rows="4" required></textarea><br />
-
-  <button type="submit">Submit</button>
-  <p>Comments will be reviewed before posting.</p>
-</form>
-<script>
-  // Grab the page's title and drop it into the hidden field
-  document.getElementById("post_title").value = document.title;
-</script>
-<footer>
-Copyright 2025 Wesley Martin
-</footer>
+<h2>Comments></h2>
+<h3>No comments yet. Be the first.</h3>
+<script src="script.js"></script>
 </body>
 </html>

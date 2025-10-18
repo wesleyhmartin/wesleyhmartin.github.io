@@ -1,92 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Navigation Is Getting Smarter, Thanks to Navis</title>
-  <style>
-    /* Minimal, readable styling */
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      line-height: 1.55;
-      color: #111;
-      background: #fff;
-      margin: 0;
-      padding: 24px;
-      max-width: 760px;
-    }
-    header small { color: #666; display:block; margin-bottom:10px; }
-    h1 { font-size: 1.9rem; margin: 0 0 8px 0; }
-    h2 { font-size: 1.25rem; margin-top: 28px; }
-    p { margin: 14px 0; }
-    .muted { color: #666; font-size: 0.95rem; }
-    blockquote {
-      margin: 12px 0;
-      padding: 12px 16px;
-      border-left: 4px solid #ddd;
-      background: #fafafa;
-    }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .price { font-weight: 600; }
-    footer { margin-top: 30px; color: #666; font-size: 0.95rem; }
-  </style>
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83SBMLVH1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-83SBMLVH1G');
-</script>
+<link rel="stylesheet" href="style.css"></head>
 <body>
-  <header>
-<a href="../blog">Read More From My Blog</a>
     <h1>Navigation Is Getting Smarter, Thanks to Navis</h1>
-<p>Update: Sorry for the error in the last article. Thanks ChatGPT, while you were supposed to spell-check.</p>
    <article>
       <p>There are websites that let you use AI to generate an image of a turtle playing basketball. How is that even remotely relevant to the title of this post? It isn’t. But I think we can all agree that’s a complete and utter waste of energy and R&amp;D resources.</p>
-
       <p>I recently talked with a company that’s actually using AI to make people’s lives better. They’re called Touchpulse, and they’re developing an innovative product: <strong>Navis</strong>.</p>
-
       <p>When they first reached out, I was skeptical—thinking it might just be another run-of-the-mill “we’ll help you navigate (sometimes)” company. Turns out, their product is actually pretty interesting.</p>
-
       <h2 id="what-it-is">What It Is and Does</h2>
-
       <p>At its core, Navis relies on GPS data from OpenStreetMap to figure out where on Earth you are. It’s a mobile app for iOS and Android, combining GPS and AI to pinpoint your location and help you navigate more intelligently.</p>
-
       <p>Touchpulse CEO Liam Geschwindt told me it uses AI algorithms and satellite imagery to “extract more info about your environment.” Touchpulse says Navis can detect your position within 1–2 meters. And if you need help with a very specific task, it can even use your phone’s camera.</p>
-
       <p>Of course, AI isn’t perfect. But Navis has a clever solution: if you’re stuck—or need help navigating the last few yards—you can start a live video call with a human assistant. Geschwindt said they’re in talks with Aira to form a potential partnership.</p>
-
       <p>The company’s also tackling one of the tougher gremlins in navigation: indoor mapping. Referencing that problem, Geschwindt said, <blockquote>“The issue of indoor navigation is scalability.”</blockquote> Their plan is to handle most of it with AI, avoiding the labor-intensive manual mapping other apps require.</p>
-
       <p>When I asked if the video calls were strictly for navigation or more general-purpose, he quipped, <blockquote>“Navigation is a broad topic. If you’re paying for it, you can use it however you want—whether you’re navigating to the front door or the ketchup in the fridge.”</blockquote></p>
-
       <h2 id="pricing">Pricing</h2>
-
       <p>So, how will Navis sustain itself?</p>
-
       <p>After a few weeks of beta testing, Touchpulse plans to price the app at around <span class="price">€15/month</span> (roughly <span class="price">$17/month</span> for us Americans). They’re also considering a <span class="price">€30/month</span> (<span class="price">$34</span>) plan that includes 60 minutes of human video calls—still noticeably cheaper than the competition.</p>
-
       <p>If you’re curious, there’s a beta waiting list open now at <a href="https://touchpulse.nl/navis" rel="noopener" target="_blank">touchpulse.nl/navis</a>.</p>
     </article>
-  </main>
-<h3>Comments</h3>
-<form action="https://formspree.io/f/mdkewaja" method="POST">
-  <label for="name">Name:</label><br />
-  <input type="text" id="name" name="Display Name:" required />
-
-  <label for="comment">Comment:</label><br />
-  <textarea id="comment" name="Comment" rows="4" required></textarea><br />
-
-  <button type="submit">Submit</button>
-  <p>Comments will be reviewed before posting.</p>
-</form>
-
-  <footer>
-
-  </footer>
+<script src="script.js"></script>
 </body>
 </html>

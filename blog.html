@@ -1,43 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wesley Martin's Blog - Wesley Martin</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-  .iframe-container {
-    width: 300px;
-    height: 30px;
-  }
-  #surpriseMessage, #rssFidgetMessage {
-    display: none;
-    color: darkgreen;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  #rssFidgetMessage {
-    color: darkred;
-  }
-</style>
+<title>Another Random Tech Blog - Wesley Martin</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83SBMLVH1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-83SBMLVH1G');
-</script>
 <body class="bg-light text-dark">
-
-<nav class="p-3 bg-dark text-white text-center">
-  <a href="/index" class="text-white m-2">Home</a><br>
-  <span>Current Page</span><a href="/blog" class="text-white m-2">Blog</a><br>
-  <a href="/projects" class="text-white m-2">Projects</a><br>
-  <a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor" class="text-white m-2">Contact</a>
-</nav>
-
 <div class="container py-5">
 
   <h1 class="text-center">Hi! I'm Wesley Martin!</h1>
@@ -47,88 +15,59 @@
     <p>Get New Posts in your email:</p>
     <form id="subscribeForm" action="https://formspree.io/f/mdkewaja" method="POST" onsubmit="return showConfirmation(event)" class="mb-3">
       <div class="mb-2">
-        <label for="email" class="form-label">Your Email:</label>
-        <input type="email" id="email" name="email" required class="form-control">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="emailSubscriberBlog" name="email" required class="form-control">
       </div>
       <button type="submit" class="btn btn-primary">Subscribe</button>
     </form>
   </div>
 
   <h2 class="mt-5">RSS Feed</h2>
-  <p>You can now subscribe to receive new posts via RSS. The URL to do so is:
-    <span id="rssUrl" class="fw-bold">https://wesleymartin.net/blogfeed.xml</span>
-  </p>
+  <p>You can subscribe to receive new posts via RSS. The URL to do so is:</p>
+<p id="rssUrl" class="fw-bold">https://wesleymartin.net/blogfeed.xml</p>
   <button id="copyBtn" onclick="copyToClipboard()" class="btn btn-outline-secondary mb-2">Copy RSS Link</button>
   <p id="rssFidgetMessage">This isn't a fidget toy. You already have the link on the clipboard. But just to please you, I'll copy it once more.</p>
 
   <h2>Search Blog</h2>
+  <p>Results will filter as you type.</p>
   <div class="mb-3">
     <input type="text" id="searchBox" class="form-control" placeholder="Search Blog" onkeyup="filterPosts()">
   </div>
-  <p id="surpriseMessage">🎉 Surprise! You discovered the secret! 🎉</p>
 
   <h2>Posts</h2>
   <div id="postsContainer">
-  <div class="post">
-<h3><a href="/media/endofanos.html">The End of an OS: Reflections on Windows 10 and How I Got Started with Computers</a></h3>
+  <h3><a href="/media/endofanos.html">The End of an OS: Reflections on Windows 10 and How I Got Started with Computers</a></h3>
 <p>October 14, 2025</p>
-<h3><a href="/media/vrstream.html">Victor Reader Stream: What I Think</a></h3>
-    <div class="post">
-<h3><a href="/media/navis.html">Your Navigation is Getting Smarter, Thanks to Navis</a></h3>
+<h3><a href="/media/navis.html">Navigation is Getting Smarter, Thanks to Navis</a></h3>
 <p>October 8, 2025</p>
 <h3><a href="/media/vrstream.html">Victor Reader Stream: What I Think</a></h3>
 <p>September 18, 2025</p>
-      <h3><a href="https://speak4.app/lp/ou01jn56/?ts=1755873072">Help Ensure Funding Continues for NLS Services</a></h3>
-      <p>August 26, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/debontechtalk.html">DEB Featured on RNIB Connect Radio</a></h3>
-      <p>August 12, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/myaijourney.html">My AI Journey, and Why I Think ChatGPT is Falling Behind</a></h3>
-      <p>July 21, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/deb2release.html">New Release: DEB - Emoji Describer Version 2</a></h3>
-      <p>June 19, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/debrelease.html">New Release: DEB - Emoji Describer</a></h3>
-      <p>June 5, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/alexaonwindows.html">You Probably Didn't Know You Can Use Alexa on Windows</a></h3>
-      <p>May 22, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/da2.html">What I Like and Don't Like About the DA2 Player</a></h3>
-      <p>May 17, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/innosearch.html">From Innosearch: Introducing a New Checkout Flow</a></h3>
-      <p>April 23, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="/media/how-to-fix-github-pages-case-sensitivity.html">How to Fix GitHub Pages's Case-sensitivity</a></h3>
-      <p>April 16, 2025</p>
-    </div>
-    <div class="post">
-      <h3><a href="https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html">From ComputerWorld: Mozilla Unveils Gmail Challenger, Thundermail</a></h3>
-      <p>April 2, 2025</p>
-    </div>
+<h3><a href="https://speak4.app/lp/ou01jn56/?ts=1755873072">Help Ensure Funding Continues for NLS Services</a></h3>
+<p>August 26, 2025</p>
+<h3><a href="/media/debontechtalk.html">DEB Featured on RNIB Connect Radio</a></h3>
+<p>August 12, 2025</p>
+<h3><a href="/media/myaijourney.html">My AI Journey, and Why I Think ChatGPT is Falling Behind</a></h3>
+<p>July 21, 2025</p>
+<h3><a href="/media/deb2release.html">New Release: DEB - Emoji Describer Version 2</a></h3>
+<p>June 19, 2025</p>
+<h3><a href="/media/debrelease.html">New Release: DEB - Emoji Describer</a></h3>
+<p>June 5, 2025</p>
+<h3><a href="/media/alexaonwindows.html">You Probably Didn't Know You Can Use Alexa on Windows</a></h3>
+<p>May 22, 2025</p>
+<h3><a href="/media/da2.html">What I Like and Don't Like About the DA2 Player</a></h3>
+<p>May 17, 2025</p>
+<h3><a href="/media/innosearch.html">From Innosearch: Introducing a New Checkout Flow</a></h3>
+<p>April 23, 2025</p>
+<h3><a href="/media/how-to-fix-github-pages-case-sensitivity.html">How to Fix GitHub Pages's Case-sensitivity</a></h3>
+<p>April 16, 2025</p>
+<h3><a href="https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html">From ComputerWorld: Mozilla Unveils Gmail Challenger, Thundermail</a></h3>
+<p>April 2, 2025</p>
   </div>
-
   <p id="noResultsMessage" style="display:none; font-style:italic;">
-    No results. If you just can't find what you want, maybe I can help. Hit the contact link at the top of the page.
+    No results. If you can't find what you need, maybe I can help. Hit the contact link at the top of the page.
   </p>
 
 </div>
-
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  Copyright 2025 Wesley Martin. Articles from other sources are the property of their respective owners.
-</footer>
-
 <script>
   let rssClickCount = 0;
 
@@ -150,7 +89,7 @@
 
     rssClickCount++;
 
-    if (rssClickCount >= 5) {
+    if (rssClickCount >= 3) {
       rssFidgetMessage.style.display = "block";
     } else {
       rssFidgetMessage.style.display = "none";
@@ -190,16 +129,8 @@
     } else {
       document.querySelectorAll("#postsContainer h3").forEach(h3 => h3.style.display = "");
       noResultsMessage.style.display = "none";
-    }
-
-    // Surprise feature
-    if (filter === "wesleyrocks") {
-      surpriseMessage.style.display = "block";
-    } else {
-      surpriseMessage.style.display = "none";
-    }
-  }
+    }}
 </script>
-
+<script src="script.js"></script>
 </body>
 </html>

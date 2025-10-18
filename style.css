@@ -1,0 +1,268 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+nav {
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    color: #f8991c;
+}
+
+/* Dark mode toggle */
+.dark-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('media/Wesley_Using_eReader.jpg') center/cover no-repeat;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+
+.hero button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background: #f8991c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+/* Content containers */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button.button,
+a.button {
+    padding: 10px 20px;
+    background: #f8991c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+button.button:hover,
+a.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    background-color: #e07800;
+}
+
+/* Waveform */
+.waveform {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    background: repeating-linear-gradient(
+        to right,
+        #f8991c,
+        #f8991c 2px,
+        #fff 2px,
+        #fff 4px
+    );
+    animation: wave 1s linear infinite;
+}
+
+/* Animations */
+@keyframes wave {
+    0% { background-position: 0 0; }
+    100% { background-position: 20px 0; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Details */
+details summary {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #333;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+details[open] summary {
+    background: #444;
+}
+
+details p {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Iframe containers */
+.iframe-container {
+    width: 300px;
+    height: 30px;
+}
+
+/* Messages */
+#surpriseMessage, #rssFidgetMessage {
+    display: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#surpriseMessage { color: darkgreen; }
+#rssFidgetMessage { color: darkred; }
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+
+h2 {
+    color: #444;
+    margin-top: 2rem;
+}
+
+h3 {
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f8991c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

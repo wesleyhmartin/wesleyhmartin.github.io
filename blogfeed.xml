@@ -5,86 +5,70 @@
  <link>https://wesleymartin.net/blog</link>
  <description>Tech, books, and everything else from Wesley Martin</description>
  <language>en-us</language>
-
  <item>
   <title>Your Navigation is Getting Smarter, Thanks to Navis</title>
   <link>https://wesleymartin.net/media/navis</link>
-    <pubDate>Thu,	8 Oct 2025 00:00:00 GMT</pubDate></item>
-
-    <item>
-      <title>The End of an OS: Reflections on Windows 10 and How I Got Started with Computers</title>
-      <link>https://wesleymartin.net/media/endofanos</link>
-      <pubDate>Tue,	14 Oct 2025 00:00:00 GMT</pubDate>
-    </item>
-
-
-    <item>
-      <title>Victor Reader Stream: What I Think</title>
-      <link>https://wesleymartin.net/media/vrstream</link>
-      <pubDate>Thu,	18 Sep 2025 00:00:00 GMT</pubDate>
-    </item>
-	
-    <item>
-      <title>Help Ensure Funding for NLS Services</title>
-      <link>https://speak4.app/lp/ou01jn56/?ts=1755873072</link>
-      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
-    </item>
-
-
-    <item>
-      <title>DEB Featured on RNIB Radio</title>
-      <link>https://wesleymartin.net/media/debontechtalk.html</link>
-      <pubDate>Tue, 5 Aug 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-	
-      <title>My AI Journey, and Why I Think ChatGPT is Falling Behind</title>
-      <link>https://wesleymartin.net/media/myaijourney.html</link>
-      <pubDate>Mon, 21 July 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>New Release: DEB 2.0</title>
-      <link>https://wesleymartin.net/media/deb2release.html</link>
-      <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>New Release: DEB - Emoji Describer</title>
-      <link>https://wesleymartin.net/media/debrelease.html</link>
-      <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>You Probably Didn't Know You Can Use Alexa on Windows</title>
-      <link>https://wesleymartin.net/media/alexaonwindows.html</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>What I Like and Don't Like About the DA2 Player</title>
-      <link>https://wesleymartin.net/media/da2.html</link>
-      <pubDate>Sat, 17 May 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>From Innosearch: Introducing a New Checkout Flow</title>
-      <link>https://wesleymartin.net/media/innosearch.html</link>
-      <pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>How to Fix GitHub Pages's Case-sensitivity</title>
-      <link>https://wesleymartin.net/media/how-to-fix-github-pages-case-sensitivity.html</link>
-      <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
-    </item>
-
-    <item>
-      <title>Mozilla Unveils Gmail Challenger, Thundermail</title>
-      <link>https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
-
-    </item>
-  </channel>
+  <pubDate>Thu,	8 Oct 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>The End of an OS: Reflections on Windows 10 and How I Got Started with Computers</title>
+  <link>https://wesleymartin.net/media/endofanos</link>
+  <pubDate>Tue,	14 Oct 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>Victor Reader Stream: What I Think</title>
+  <link>https://wesleymartin.net/media/vrstream</link>
+  <pubDate>Thu,	18 Sep 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>Help Ensure Funding for NLS Services</title>
+  <link>https://speak4.app/lp/ou01jn56/?ts=1755873072</link>
+  <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>DEB Featured on RNIB Radio</title>
+  <link>https://wesleymartin.net/media/debontechtalk.html</link>
+  <pubDate>Tue, 5 Aug 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>My AI Journey, and Why I Think ChatGPT is Falling Behind</title>
+  <link>https://wesleymartin.net/media/myaijourney.html</link>
+  <pubDate>Mon, 21 July 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>New Release: DEB 2.0</title>
+  <link>https://wesleymartin.net/media/deb2release.html</link>
+  <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>New Release: DEB - Emoji Describer</title>
+  <link>https://wesleymartin.net/media/debrelease.html</link>
+  <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>You Probably Didn't Know You Can Use Alexa on Windows</title>
+  <link>https://wesleymartin.net/media/alexaonwindows.html</link>
+  <pubDate>Thu, 22 May 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>What I Like and Don't Like About the DA2 Player</title>
+  <link>https://wesleymartin.net/media/da2.html</link>
+  <pubDate>Sat, 17 May 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>From Innosearch: Introducing a New Checkout Flow</title>
+  <link>https://wesleymartin.net/media/innosearch.html</link>
+  <pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>How to Fix GitHub Pages's Case-sensitivity</title>
+  <link>https://wesleymartin.net/media/how-to-fix-github-pages-case-sensitivity.html</link>
+  <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
+ </item>
+ <item>
+  <title>Mozilla Unveils Gmail Challenger, Thundermail</title>
+  <link>https://www.computerworld.com/article/3952798/mozilla-unveils-gmail-challenger-thundermail.html</link>
+  <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+ </item>
+</channel>
 </rss>
