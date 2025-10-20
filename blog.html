@@ -29,7 +29,6 @@
   <p id="rssFidgetMessage">This isn't a fidget toy. You already have the link on the clipboard. But just to please you, I'll copy it once more.</p>
 
   <h2>Search Blog</h2>
-<p>Search is not working as of now. This is a known bug and will be resolved soon.</p>
   <p>Results will filter as you type.</p>
   <div class="mb-3">
     <input type="text" id="searchBox" class="form-control" placeholder="Search Blog" onkeyup="filterPosts()">
@@ -106,11 +105,24 @@
       .catch(() => alert("Oops. We got an error. Try copying it manually."));
   }
 
+  // Assign .post class to all posts (each h3 + its <p> date)
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("postsContainer");
+    const elements = container.querySelectorAll("h3");
+    elements.forEach(h3 => {
+      const p = h3.nextElementSibling;
+      const wrapper = document.createElement("div");
+      wrapper.classList.add("post");
+      h3.parentNode.insertBefore(wrapper, h3);
+      wrapper.appendChild(h3);
+      if (p && p.tagName === "P") wrapper.appendChild(p);
+    });
+  });
+
   function filterPosts() {
     const filter = document.getElementById("searchBox").value.toLowerCase();
     const posts = document.querySelectorAll("#postsContainer .post");
     let anyVisible = false;
-    const surpriseMessage = document.getElementById("surpriseMessage");
 
     posts.forEach(post => {
       const title = post.querySelector("h3 a").textContent.toLowerCase();
@@ -123,14 +135,8 @@
     });
 
     const noResultsMessage = document.getElementById("noResultsMessage");
-
-    if (!anyVisible) {
-      document.querySelectorAll("#postsContainer h3").forEach(h3 => h3.style.display = "none");
-      noResultsMessage.style.display = "block";
-    } else {
-      document.querySelectorAll("#postsContainer h3").forEach(h3 => h3.style.display = "");
-      noResultsMessage.style.display = "none";
-    }}
+    noResultsMessage.style.display = anyVisible ? "none" : "block";
+  }
 </script>
 <script src="script.js"></script>
 </body>

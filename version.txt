@@ -1,2 +1,3 @@
-WesleyMartin.net version 19.0.1. Last updated Oct. 18.
-This website was recently redesigned, and some bugs may occur. If you notice any, please <a href="mailto:wesley@wesleymartin.net">contact me</a>. Thanks.
+WesleyMartin.net version 19.0.2. Last updated Oct. 20.
+<br>
+This website was recently redesigned to increase modularity and add headers and footers, among other things, dynamically, and some bugs may occur. If you notice any, please <a href="mailto:wesley@wesleymartin.net">contact me</a>. Thanks.
