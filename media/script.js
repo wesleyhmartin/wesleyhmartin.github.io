@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.createElement("footer");
 
   // Fetch version info
-  fetch("./version.txt")
+  fetch("version.txt")
     .then(response => response.text())
     .then(versionText => {
       footer.innerHTML = `

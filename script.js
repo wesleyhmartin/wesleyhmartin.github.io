@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.createElement("footer");
   document.body.appendChild(footer);
 
-  const versionPath = "./version.txt"; // adjust if needed
+  const versionPath = "version.txt"; // adjust if needed
   fetch(versionPath)
     .then(response => response.text())
     .then(versionText => {
