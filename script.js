@@ -1,33 +1,5 @@
-// ---------- Google Analytics ----------
-(function () {
-  const gtagScript = document.createElement("script");
-  gtagScript.async = true;
-  gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-83SBMLVH1G";
-  document.head.appendChild(gtagScript);
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag("js", new Date());
-  gtag("config", "G-83SBMLVH1G");
-})();
-
 // ---------- DOM Content Setup ----------
 document.addEventListener("DOMContentLoaded", () => {
-
-  // --- Dark Mode Toggle ---
-  const container = document.createElement("div");
-  container.className = "dark-toggle-container";
-  container.innerHTML = `
-    <label>
-      <input type="checkbox" id="darkModeCheckbox"> Dark Mode
-    </label>
-  `;
-  document.body.prepend(container);
-
-  const darkCheckbox = container.querySelector("#darkModeCheckbox");
-  darkCheckbox.addEventListener("change", function () {
-    document.body.classList.toggle("dark-mode", this.checked);
-  });
 
   // --- Navigation ---
   const nav = document.createElement("nav");
@@ -37,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   nav.innerHTML = `
     <a href="/index">Home</a>
     <a href="/blog">Blog</a>
-    <a href="/projects">Projects</a>
+    <a href="/deb">DEB - My Emoji Describer App</a>
     <a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">
         <i class="fa fa-envelope"></i> Contact
     </a>
   `;
-  container.insertAdjacentElement("afterend", nav);
+  document.body.prepend(nav);
 
   // --- Wrap content in <main> ---
   const main = document.createElement("main");
@@ -86,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
             HTML edited with Notepad++ and VS Code.
           </p>
         </details>
-        <p>Analytics may be collected.</p>
       `;
     })
     .catch(err => {
