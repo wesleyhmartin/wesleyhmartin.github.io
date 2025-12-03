@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <form action="https://formspree.io/f/mdkewaja" method="POST">
   <label for="name">Name:</label><br />
   <input type="hidden" id="post_title" name="post_title">
-  <input type="text" id="name" name="Display Name:" required />
+  <input type="text" id="name" name="Display Name:" required /><br>
   <label for="comment">Comment:</label><br />
   <textarea id="comment" name="Comment" rows="4" required></textarea>
   <button type="submit">Submit</button>
