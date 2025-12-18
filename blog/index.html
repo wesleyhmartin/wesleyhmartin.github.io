@@ -27,8 +27,6 @@
   <p>You can subscribe to receive new posts via RSS. The URL to do so is:</p>
 <p id="rssUrl" class="fw-bold">https://wesleymartin.net/blogfeed</p>
   <button id="copyBtn" onclick="copyToClipboard()" class="btn btn-outline-secondary mb-2">Copy RSS URL</button>
-  <p id="rssFidgetMessage">This isn't a fidget toy. You already have the link on the clipboard. But just to please you, I'll copy it once more...</p>
-
   <h2>Search Blog</h2>
   <p>Results will filter as you type.</p>
   <div class="mb-3">
@@ -110,7 +108,7 @@
       .then(() => {
         button.textContent = "Copied!";
         setTimeout(() => {
-          button.textContent = "Copy RSS Link";
+          button.textContent = "Copy RSS URL";
         }, 1000);
       })
       .catch(() => alert("Oops. We got an error. Try copying it manually."));
