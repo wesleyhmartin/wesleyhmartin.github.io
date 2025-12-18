@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   nav.innerHTML = `
     <a href="/index">Home</a>
     <a href="/blog">Blog</a>
-    <a href="/deb">DEB - My Emoji Describer App</a>
     <a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">
         <i class="fa fa-envelope"></i> Contact
     </a>

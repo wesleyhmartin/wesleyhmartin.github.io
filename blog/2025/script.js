@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   nav.innerHTML = `
     <a href="/index">Home</a><br>
     <a href="/blog"><i class="fa fa-blog"></i> Blog</a><br>
-    <a href="/deb"><i class="fa fa-folder-open"></i> DEB - My Emoji Describer App</a><br>
     <a href="mailto:wesley@wesleymartin.net?subject=From%20Website%20Visitor">
       <i class="fa fa-envelope"></i> Contact
     </a>
