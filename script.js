@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Static Footer ---
   const footer = document.createElement("footer");
   footer.innerHTML = `
-    <p>Copyright 2024–2025 Wesley Martin.</p>
+    <p>Copyright 2024–2026 Wesley Martin.</p>
     <details>
       <summary>Powered by...</summary>
       <p>

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <p>Comments will be reviewed before posting.</p>
 </form>
 
-<p>Copyright 2024–2025 Wesley Martin.</p>
+<p>Copyright 2024–2026 Wesley Martin.</p>
 <details>
   <summary>Powered by...</summary>
   <p>
