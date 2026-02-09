@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AccessPlay Documentation</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#222;padding:24px;max-width:980px;margin:0 auto}
+    pre{background:#f5f5f5;padding:12px;overflow:auto}
+    code{background:#eef;padding:2px 4px;border-radius:3px}
+    h1,h2,h3{color:#1766aa}
+    nav{margin-bottom:18px}
+    table{border-collapse:collapse;width:100%}
+    th,td{padding:8px;border:1px solid #ddd}
+    .markdown-body img{max-width:100%}
+  </style>
+</head>
+  <main>
+    <h1>AccessPlay</h1>
+    <p>A comprehensive, accessible audio player extension for Chrome, Edge, and Firefox</p>
+
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+    </ul>
+
+    <h2 id="overview">Overview</h2>
+    <p>AccessPlay is a powerful, accessible audio player extension designed with keyboard-first navigation and screen reader support in mind. It provides an intuitive interface for playing, controlling, and navigating audio files with comprehensive keyboard shortcuts and customizable settings.</p>
+    <p>Whether you're listening to podcasts, audiobooks, or lectures, AccessPlay gives you complete control over playback with:</p>
+    <ul>
+      <li>Precise playback speed control (0.5x to 5x)</li>
+      <li>Volume management with keyboard shortcuts</li>
+      <li>Customizable skip duration for quick navigation</li>
+      <li>Jump-to-time feature with hours, minutes, and seconds</li>
+      <li>Full keyboard accessibility</li>
+      <li>Screen reader friendly</li>
+    </ul>
+
+    <h2 id="installation">Installation</h2>
+    <h3>If you're using Chrome:</h3>
+    <p>Open the <a href="https://chromewebstore.google.com/">Chrome Web Store</a>.</p>
+    <h3>If you're Using Firefox:</h3>
+    <p>Open the <a href="https://addons.mozilla.org/en-US/firefox/addon/accessplay/">Firefox Add-ons page for AccessPlay</a>.</p>
+    <h3>For Edge</h3>
+    <p>Open the Microsoft Edge Add-ons page (TBD).</p>
+    <ol>
+      <li>Find the Install / Add to Chrome / Add to Firefox button and confirm installation.</li>
+    </ol>
+    <p><strong>Note:</strong> AccessPlay stores all settings securely in your browser's sync storage, so your preferences are synchronized across devices when you're signed in.</p>
+
+    <h2 id="features">Features</h2>
+    <h3>Play/Pause Control</h3>
+    <p>Toggle playback with a single button or press the Space bar.</p>
+
+    <h3>Skip Navigation</h3>
+    <p>Use arrow keys to skip forward and backward by a customizable duration (default 10 seconds, up to 2 minutes).</p>
+
+    <h3>Speed Control</h3>
+    <p>Play at speeds from 0.5x to 5x normal speed using keyboard shortcuts or the slider. Perfect for learning and time management.</p>
+
+    <h3>Volume Control</h3>
+    <p>Adjust volume with arrow keys or the slider. Range from 0% to 100% with real-time feedback.</p>
+
+    <h3>Jump to Time</h3>
+    <p>Click the time display to open a dialog where you can jump to a specific hour, minute, and second.</p>
+
+    <h3>Download Support</h3>
+    <p>Download the currently playing audio file with a single click.</p>
+
+    <h3>Customizable Settings</h3>
+    <p>Configure default volume, default speed, and skip duration from the extension's options page.</p>
+
+    <h3>Screen Reader Friendly</h3>
+    <p>Full support for screen readers with announcements of player state and actions.</p>
+
+    <h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+    <p>AccessPlay provides comprehensive keyboard control for hands-free operation:</p>
+    <table>
+      <thead>
+        <tr><th>Key(s)</th><th>Action</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>Space</code></td><td>Play/Pause</td><td>Toggles between playing and paused states</td></tr>
+        <tr><td><code>←</code></td><td>Skip Backward</td><td>Skips back by configured duration (default 10 seconds)</td></tr>
+        <tr><td><code>→</code></td><td>Skip Forward</td><td>Skips forward by configured duration (default 10 seconds)</td></tr>
+        <tr><td><code>↑</code></td><td>Increase Volume</td><td>Increases volume by 5%. Announces current volume level</td></tr>
+        <tr><td><code>↓</code></td><td>Decrease Volume</td><td>Decreases volume by 5%. Announces "Muted" when at 0%</td></tr>
+        <tr><td><code>[</code></td><td>Decrease Speed</td><td>Decreases playback speed by 0.1x (minimum 0.5x)</td></tr>
+        <tr><td><code>]</code></td><td>Increase Speed</td><td>Increases playback speed by 0.1x (maximum 5.0x)</td></tr>
+        <tr><td><code>=</code></td><td>Reset Speed</td><td>Sets speed back to normal (1.0x)</td></tr>
+        <tr><td><code>+</code></td><td>Maximum Speed</td><td>Sets speed to maximum (5.0x)</td></tr>
+        <tr><td><code>-</code></td><td>Minimum Speed</td><td>Sets speed to minimum (0.5x)</td></tr>
+        <tr><td><code>Ctrl+S / Cmd+S</code></td><td>Save Options</td><td>On the options page, saves your settings</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Tip:</strong> When focused on a slider control, arrow keys will adjust that slider instead of triggering the player shortcuts. This allows for precise slider control.</p>
+
+    <h2 id="usage">How to Use</h2>
+    <h3>Basic Playback</h3>
+    <ol>
+      <li>Open an audio file in your browser or use a website that provides audio</li>
+      <li>The AccessPlay player will appear when audio is detected</li>
+      <li>Click the Play button or press <code>Space</code> to start playing</li>
+      <li>Use arrow keys or buttons to navigate</li>
+    </ol>
+
+    <h3>Adjusting Volume</h3>
+    <ol>
+      <li>Press <code>↑</code> to increase volume or <code>↓</code> to decrease</li>
+      <li>Volume ranges from 0% to 100%</li>
+      <li>Screen readers will announce the current volume level</li>
+    </ol>
+
+    <h3>Changing Playback Speed</h3>
+    <ol>
+      <li>Press <code>[</code> to slow down or <code>]</code> to speed up</li>
+      <li>Use <code>=</code> to return to normal speed (1.0x)</li>
+      <li>Speed changes are announced via screen reader</li>
+    </ol>
+
+    <h3>Skipping to a Specific Time</h3>
+    <ol>
+      <li>Click on the time display (showing current time / total duration)</li>
+      <li>A dialog box will open with "Jump to:" as the heading</li>
+      <li>Enter the desired hours, minutes, and seconds</li>
+      <li>Use the Pause button in the dialog to pause playback while seeking</li>
+      <li>Click "Go" to jump to that time, or "Cancel" to close without seeking</li>
+    </ol>
+
+    <h3>Skipping by Duration</h3>
+    <ol>
+      <li>Press <code>←</code> to skip backward or <code>→</code> to skip forward</li>
+      <li>The skip amount is configurable in settings (default 10 seconds)</li>
+      <li>The player will prevent you from skipping beyond the audio boundaries</li>
+    </ol>
+
+    <h3>Downloading Audio</h3>
+    <ol>
+      <li>Click the "Download" button while audio is playing</li>
+      <li>The download will begin immediately</li>
+      <li>The button will show "Download Started. Click to retry." for 5 seconds</li>
+    </ol>
+
+    <h2 id="settings">Configuration & Settings</h2>
+    <h3>Accessing the Options Page</h3>
+    <ol>
+      <li>Right-click the AccessPlay extension icon in your browser toolbar</li>
+      <li>Select "Options" or "Manage extension"</li>
+      <li>The settings page will open</li>
+    </ol>
+
+    <h3>Available Settings</h3>
+    <h4>Skip Duration (Default: 10 seconds)</h4>
+    <ul>
+      <li>Minimum: 1 second</li>
+      <li>Maximum: 120 seconds (2 minutes)</li>
+      <li>This is the amount of time skipped when using the arrow keys or skip buttons</li>
+    </ul>
+
+    <h4>Default Volume (Default: 100%)</h4>
+    <ul>
+      <li>Range: 0% to 100%</li>
+      <li>When you open a new audio file, it will start at this volume level</li>
+    </ul>
+
+    <h4>Default Speed (Default: 1.0x)</h4>
+    <ul>
+      <li>Range: 0.5x to 5.0x</li>
+      <li>When you open a new audio file, it will play at this speed</li>
+    </ul>
+
+    <h3>Saving Your Settings</h3>
+    <ol>
+      <li>Adjust your desired settings</li>
+      <li>Click the "Save" button or press <code>Ctrl+S</code></li>
+      <li>The live region will announce "Options have been saved."</li>
+      <li>Settings are automatically synced to your browser account</li>
+    </ol>
+
+    <h2 id="accessibility">Accessibility Features</h2>
+    <h3>For Screen Reader Users</h3>
+    <ul>
+      <li>All actions are announced aloud (volume changes, speed changes, boundaries, etc.)</li>
+      <li>All buttons and controls have clear labels</li>
+      <li>Time is described in both visual and spoken formats</li>
+      <li>Full keyboard navigation without requiring a mouse</li>
+    </ul>
+
+    <h3>For Keyboard Users</h3>
+    <ul>
+      <li>Every function can be performed using keyboard shortcuts</li>
+      <li>Minimal key combinations to reduce strain</li>
+      <li>When using sliders, arrow keys control the slider instead of the player for precise adjustment</li>
+      <li>Immediate feedback for every action</li>
+    </ul>
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+    <h3>The player doesn't appear when I open an audio file</h3>
+    <ul>
+      <li>Ensure the extension is enabled (check in your browser's extension manager)</li>
+      <li>This player will not work on websites that employ DRM or custom players, such as Audible, Spotify, or Apple Podcasts.</li>
+    </ul>
+
+    <h3>Keyboard shortcuts aren't working</h3>
+    <ul>
+      <li>Make sure the player window is focused</li>
+      <li>You may have to put your screen reader in Focus mode or Forms Mode, or turn off Scan Mode.</li>
+      <li>If focused on a slider, arrow keys will control the slider instead of the player</li>
+    </ul>
+
+    <h3>Screen reader isn't announcing changes</h3>
+    <ul>
+      <li>Ensure Report Dynamic Content Changes or equivalent is turned on.</li>
+    </ul>
+
+    <h3>Settings aren't being saved</h3>
+    <ul>
+      <li>Verify you're signed into your browser account (settings sync requires this)</li>
+      <li>Check that you clicked "Save" or pressed Ctrl+S</li>
+      <li>Wait for the "Options have been saved." announcement</li>
+    </ul>
+
+    <h3>Volume or speed won't change</h3>
+    <ul>
+      <li>Check that the audio file is loaded (the player should show a duration)</li>
+      <li>Try adjusting using the slider instead of keyboard shortcuts</li>
+      <li>Verify your system volume isn't muted</li>
+      <li>Some audio sources may have their own volume controls that take precedence</li>
+    </ul>
+
+    <h3>The time jump dialog won't let me enter a time</h3>
+    <ul>
+      <li>The fields validate in real-time to prevent invalid times</li>
+      <li>You cannot set a time beyond the audio file's duration</li>
+    </ul>
+
+    <p><strong>Still having issues?</strong> Email me <a href="mailto:accessplay@wesleymartin.net">accessplay@wesleymartin.net</a></p>
+
+    <hr>
+    <p><strong>AccessPlay</strong> - A keyboard-accessible audio player for everyone</p>
+    <p>Version 1.0.0 | Chrome, Edge, &amp; Firefox Compatible</p>
+  </main>
+  </script>
+</body>
+</html>
