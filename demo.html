@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bad Page</title>
+<style>
+  body { background:#eee; color:#ddd; }
+  button { padding:10px; background:#ccc; margin:5px; cursor:pointer; }
+</style>
+<script>
+function focusBox() {
+  document.getElementById("box").focus();
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="box">
+
+<button onclick="alert('Sent')"></button>
+<button onclick="location.reload()"></button>
+
+<a onclick="focusBox()">Focus the edit field</a>
+
+<img src="placeholder.png">
+
+</body>
+</html>
