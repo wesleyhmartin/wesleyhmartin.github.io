@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AccessPlay Demo</title>
+  <style>
+    /* Integrated from player.css */
+    body { background-color: #121212; color: white; font-family: Arial, sans-serif; padding: 20px; }
+    
+    #videoContainer {
+      width: 100%;
+      max-width: 700px;
+      background: #000;
+      margin: 0 auto 10px auto;
+    }
+
+    #mainMedia {
+      width: 100%;
+      display: block;
+    }
+
+    #player {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 15px;
+      background: #1e1e1e; color: #ffffff; padding: 15px; border-radius: 10px;
+      max-width: 700px; margin: 10px auto;
+    }
+
+    button {
+      background: #2c2c2c; color: #ffffff; border: none; padding: 8px 14px;
+      border-radius: 5px; cursor: pointer;
+    }
+    
+    button:hover { background: #444; }
+
+    input[type=range] { width: 100px; cursor: pointer; }
+
+    /* Dialog Styling */
+    dialog {
+      background: #2c2c2c; color: white; border: 1px solid #444; border-radius: 10px; padding: 20px;
+    }
+    dialog input { background: #111; color: #ff9800; border: 1px solid #444; padding: 5px; width: 50px; }
+  </style>
+</head>
+<body>
+
+  <div id="videoContainer">
+    <audio id="mainMedia" controls src="demo_audio.mp3" style="width:100%;"></audio>
+  </div>
+
+  <div id="player">
+    <button id="playBtn">Play</button>
+    <button id="rewindBtn">Rewind</button>
+    <button id="forwardBtn">Forward</button>
+    
+    <label for="volume">Vol:</label>
+    <input type="range" id="volume" min="0" max="100" value="100" aria-label="Volume">
+    
+    <label for="speed">Speed:</label>
+    <input type="range" id="speed" min="0.5" max="5" step="0.1" value="1" aria-label="Speed">
+
+    <button id="timeContainer" aria-label="0 seconds of 0 seconds" aria-braillelabel="0s/0s">
+      <span id="currentTime" aria-hidden="true">0:00</span>
+      <span aria-hidden="true"> / </span>
+      <span id="durationTime" aria-hidden="true">0:00</span>
+    </button>
+  </div>
+
+  <dialog id="seekDialog">
+    <div>
+      <h4>Jump to:</h4>
+      <button id="seekPause">Pause</button><br><br>
+      <label>H: <input type="number" id="seekHours" min="0" value="0"></label>
+      <label>M: <input type="number" id="seekMinutes" min="0" max="59" value="0"></label>
+      <label>S: <input type="number" id="seekSeconds" min="0" max="59" value="0"></label><br><br>
+      <button id="seekGo">Go</button>
+      <button id="seekCancel">Cancel</button>
+      <div id="seekLive" role="status" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+  </dialog>
+
+  <div id="ariaLive" role="status" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;"></div>
+
+  <script>
+    // --- Adapted from player.js ---
+    const audio = document.getElementById("mainMedia");
+    const ariaLive = document.getElementById("ariaLive");
+    const playBtn = document.getElementById("playBtn");
+    const rewindBtn = document.getElementById("rewindBtn");
+    const forwardBtn = document.getElementById("forwardBtn");
+    const volumeSlider = document.getElementById("volume");
+    const speedSlider = document.getElementById("speed");
+    const currentTimeSpan = document.getElementById("currentTime");
+    const durationTimeSpan = document.getElementById("durationTime");
+    const timeContainer = document.getElementById("timeContainer");
+
+    // Hide default controls to show off the AccessPlay UI
+    audio.controls = false;
+
+    let skipSeconds = 10;
+
+    // Helper: Time Formatting
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return "0:00";
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = Math.floor(seconds % 60);
+      return h > 0 ? `${h}:${m < 10 ? "0" : ""}${m}:${s < 10 ? "0" : ""}${s}` : `${m}:${s < 10 ? "0" : ""}${s}`;
+    }
+
+    function formatSpeechTime(seconds) {
+      if (isNaN(seconds)) return "0 seconds";
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = Math.floor(seconds % 60);
+      let res = "";
+      if (h > 0) res += h + " hour" + (h === 1 ? "" : "s") + " ";
+      if (m > 0) res += m + " minute" + (m === 1 ? "" : "s") + " ";
+      res += s + " second" + (s === 1 ? "" : "s");
+      return res.trim();
+    }
+
+    // Logic Functions
+    function updateVolume(val) {
+      const newVol = Math.min(1, Math.max(0, val));
+      audio.volume = newVol;
+      volumeSlider.value = Math.round(newVol * 100);
+    }
+
+    function updateSpeed(val) {
+      const newSpeed = Math.min(5, Math.max(0.5, val));
+      audio.playbackRate = newSpeed;
+      speedSlider.value = newSpeed.toFixed(1);
+    }
+
+    // Controls
+    playBtn.onclick = () => audio.paused ? audio.play() : audio.pause();
+    rewindBtn.onclick = () => audio.currentTime = Math.max(0, audio.currentTime - skipSeconds);
+    forwardBtn.onclick = () => audio.currentTime = Math.min(audio.duration, audio.currentTime + skipSeconds);
+    volumeSlider.oninput = () => updateVolume(volumeSlider.value / 100);
+    speedSlider.oninput = () => updateSpeed(parseFloat(speedSlider.value));
+
+    // Seek Dialog Logic
+    const seekDialog = document.getElementById("seekDialog");
+    const seekHours = document.getElementById("seekHours");
+    const seekMinutes = document.getElementById("seekMinutes");
+    const seekSeconds = document.getElementById("seekSeconds");
+
+    timeContainer.onclick = () => {
+      seekHours.value = Math.floor(audio.currentTime / 3600);
+      seekMinutes.value = Math.floor((audio.currentTime % 3600) / 60);
+      seekSeconds.value = Math.floor(audio.currentTime % 60);
+      seekDialog.showModal();
+    };
+
+    document.getElementById("seekGo").onclick = () => {
+      const totalSeconds = (parseInt(seekHours.value || 0) * 3600) + (parseInt(seekMinutes.value || 0) * 60) + parseInt(seekSeconds.value || 0);
+      audio.currentTime = totalSeconds;
+      seekDialog.close();
+    };
+
+    document.getElementById("seekCancel").onclick = () => seekDialog.close();
+
+    // Keyboard Shortcuts
+    window.addEventListener("keydown", (e) => {
+      if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName) && document.activeElement.type !== "range") return;
+      
+      switch (e.key) {
+        case " ": e.preventDefault(); playBtn.click(); break;
+        case "ArrowLeft": if (document.activeElement.id !== "volume") rewindBtn.click(); break;
+        case "ArrowRight": if (document.activeElement.id !== "volume") forwardBtn.click(); break;
+        case "ArrowUp": e.preventDefault(); updateVolume(audio.volume + 0.05); break;
+        case "ArrowDown": e.preventDefault(); updateVolume(audio.volume - 0.05); break;
+      }
+    });
+
+    // State Syncing
+    audio.addEventListener("loadedmetadata", () => durationTimeSpan.textContent = formatTime(audio.duration));
+    audio.addEventListener("timeupdate", () => {
+      currentTimeSpan.textContent = formatTime(audio.currentTime);
+      timeContainer.setAttribute("aria-label", `${formatSpeechTime(audio.currentTime)} of ${formatSpeechTime(audio.duration)}`);
+    });
+    audio.addEventListener("play", () => playBtn.textContent = "Pause");
+    audio.addEventListener("pause", () => playBtn.textContent = "Play");
+  </script>
+</body>
+</html>
